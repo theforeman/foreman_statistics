@@ -16,7 +16,13 @@ module ForemanStatistics
 
     initializer 'foreman_statistics.register_plugin', :before => :finisher_hook do |_app|
       Foreman::Plugin.register :foreman_statistics do
-        requires_foreman '>= 2.0.0'
+        requires_foreman '>= 2.1.0'
+
+        # ==== Core cleanups
+        # TODO: clean up when this gets removed from core
+        delete_menu_item :top_menu, :trends
+        delete_menu_item :top_menu, :statistics
+        # ====
 
         # Add Global JS file for extending foreman-core components and routes
         register_global_js_file 'fills'
@@ -29,16 +35,6 @@ module ForemanStatistics
 
         # Add a new role called 'Discovery' if it doesn't exist
         role 'ForemanStatistics', [:view_foreman_statistics]
-
-        # add menu entry
-        menu :top_menu, :template,
-             url_hash: { controller: :'foreman_statistics/hosts', action: :new_action },
-             caption: 'ForemanStatistics',
-             parent: :hosts_menu,
-             after: :hosts
-
-        # add dashboard widget
-        widget 'foreman_statistics_widget', name: N_('Foreman plugin template widget'), sizex: 4, sizey: 1
       end
     end
 
