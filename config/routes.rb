@@ -1,4 +1,14 @@
-Rails.application.routes.draw do
-  get 'new_action', to: 'foreman_statistics/hosts#new_action'
-  get 'foreman_statistics', to: 'foreman_statistics/react#index'
+ForemanStatistics::Engine.routes.draw do
+  resources :statistics, :only => [:index, :show], constraints: ->(req) { req.format == :json }
+  match 'statistics' => 'react#index', :via => :get
+
+  namespace :api, defaults: { format: 'json' } do
+    scope '(:apiv)', module: :v2, defaults: { apiv: 'v2' }, apiv: /v1|v2/, constraints: ApiConstraints.new(version: 2, default: true) do
+      resources :statistics, :only => [:index]
+    end
+  end
+end
+
+Foreman::Application.routes.draw do
+  mount ForemanStatistics::Engine, at: '/foreman_statistics'
 end

@@ -1,5 +1,6 @@
 module ForemanStatistics
   class Engine < ::Rails::Engine
+    isolate_namespace ForemanStatistics
     engine_name 'foreman_statistics'
 
     config.autoload_paths += Dir["#{config.root}/app/controllers/concerns"]
@@ -29,6 +30,9 @@ module ForemanStatistics
 
         # Add permissions
         security_block :foreman_statistics do
+          permission :view_statistics, { :statistics => [:index, :show],
+                                         :"api/v2/statistics" => [:index] }
+
           permission :view_foreman_statistics, { :'foreman_statistics/hosts' => [:new_action],
                                                       :'foreman_statistics/react' => [:index] }
         end
