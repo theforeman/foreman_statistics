@@ -1,4 +1,4 @@
-import { testComponentSnapshotsWithFixtures } from '../../../../common/testHelpers';
+import { testComponentSnapshotsWithFixtures } from '@theforeman/test';
 import { statisticsProps } from '../StatisticsPage.fixtures';
 import StatisticsPage from '../StatisticsPage';
 
