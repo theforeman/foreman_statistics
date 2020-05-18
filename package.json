@@ -1,5 +1,5 @@
 {
-  "name": "plugin-name",
+  "name": "foreman_statistics",
   "version": "1.0.0",
   "description": "DESCRIPTION",
   "main": "index.js",
