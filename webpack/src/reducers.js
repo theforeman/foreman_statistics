@@ -1,10 +1,7 @@
-import { combineReducers } from 'redux';
-import EmptyStateReducer from './Components/EmptyState/EmptyStateReducer';
+// import { combineReducers } from 'redux';
 
 const reducers = {
-  pluginTemplate: combineReducers({
-    emptyState: EmptyStateReducer,
-  }),
+  // foremanStatistics: combineReducers({}),
 };
 
 export default reducers;

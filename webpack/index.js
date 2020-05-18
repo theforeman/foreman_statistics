@@ -4,7 +4,7 @@
 import componentRegistry from 'foremanReact/components/componentRegistry';
 import { registerReducer } from 'foremanReact/common/MountingService';
 import reducers from './src/reducers';
-import PluginTemplate from './src/PluginTemplate';
+import ForemanStatistics from './src/ForemanStatistics';
 
 // register reducers
 Object.entries(reducers).forEach(([key, reducer]) =>
@@ -13,6 +13,6 @@ Object.entries(reducers).forEach(([key, reducer]) =>
 
 // register components for erb mounting
 componentRegistry.register({
-  name: 'PluginTemplate',
-  type: PluginTemplate,
+  name: 'ForemanStatistics',
+  type: ForemanStatistics,
 });
