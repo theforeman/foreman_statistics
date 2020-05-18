@@ -1,5 +1,5 @@
 ForemanStatistics::Engine.routes.draw do
-  resources :statistics, :only => [:index, :show], constraints: ->(req) { req.format == :json }
+  resources :statistics, :only => %i[index show], constraints: ->(req) { req.format == :json }
   match 'statistics' => 'react#index', :via => :get
 
   namespace :api, defaults: { format: 'json' } do

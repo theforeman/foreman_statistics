@@ -1,4 +1,4 @@
-require_relative "../../test_plugin_helper"
+require_relative '../../test_plugin_helper'
 
 module ForemanStatistics
   class StatisticsTest < ActiveSupport::TestCase
@@ -7,13 +7,13 @@ module ForemanStatistics
     end
 
     test 'it should return list of statistics objects' do
-      refute_empty Statistics.charts(nil, nil)
+      assert_not_empty Statistics.charts(nil, nil)
     end
 
     test 'it should include an Operating System stat' do
       os = Statistics.charts(nil, nil).detect { |s| s.id == 'operatingsystem' }
       assert_equal 'operatingsystem', os.id
-      data = { :id => 'operatingsystem', :title => 'OS Distribution', :url=>"/foreman_statistics/statistics/operatingsystem", :search=>"/hosts?search=os_title%3D~VAL~" }
+      data = { :id => 'operatingsystem', :title => 'OS Distribution', :url => '/foreman_statistics/statistics/operatingsystem', :search => '/hosts?search=os_title%3D~VAL~' }
       assert_equal data, os.metadata
     end
 
@@ -56,7 +56,7 @@ module ForemanStatistics
     end
 
     test 'it should fail to calculate a puppet class counter statistics object without an id' do
-      assert_raise(ArgumentError) { Statistics::CountPuppetClasses.new() }
+      assert_raise(ArgumentError) { Statistics::CountPuppetClasses.new }
     end
 
     test 'it should initialize a puppet class counter statistics object' do
@@ -66,7 +66,7 @@ module ForemanStatistics
     end
 
     test 'it should fail to calculate a Fact class counter statistics object without count_by' do
-      assert_raise(ArgumentError) { Statistics::CountNumericalFactPair.new() }
+      assert_raise(ArgumentError) { Statistics::CountNumericalFactPair.new }
     end
 
     test 'it should initialize a fact pair counter statistics object' do

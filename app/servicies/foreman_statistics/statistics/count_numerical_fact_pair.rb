@@ -5,7 +5,9 @@ module ForemanStatistics
 
       def initialize(options = {})
         super(options)
-        raise(ArgumentError, 'Must provide :count_by option') if @count_by.empty?
+        if @count_by.empty?
+          raise(ArgumentError, 'Must provide :count_by option')
+        end
         @count_by = @count_by.to_s
         @total    = options[:total] || 'size'
         @used     = options[:used]  || 'free'
@@ -18,12 +20,12 @@ module ForemanStatistics
         [
           {
             :label => _('free memory'),
-            :data => mem_free,
+            :data => mem_free
           },
           {
             :label => _('used memory'),
-            :data => (mem_size - mem_free).round(2),
-          },
+            :data => (mem_size - mem_free).round(2)
+          }
         ]
       end
 

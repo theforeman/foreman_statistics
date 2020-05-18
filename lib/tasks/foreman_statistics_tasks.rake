@@ -31,7 +31,7 @@ namespace :foreman_statistics do
                          "#{ForemanStatistics::Engine.root}/lib/**/*.rb",
                          "#{ForemanStatistics::Engine.root}/test/**/*.rb"]
       end
-    rescue
+    rescue StandardError
       puts 'Rubocop not loaded.'
     end
 

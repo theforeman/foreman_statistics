@@ -3,7 +3,9 @@ module ForemanStatistics
     class CountPuppetClasses < Base
       def initialize(options = {})
         super(options)
-        raise(ArgumentError, 'Must provide an :id or :count_by option') if id.empty?
+        if id.empty?
+          raise(ArgumentError, 'Must provide an :id or :count_by option')
+        end
       end
 
       def calculate
@@ -12,7 +14,7 @@ module ForemanStatistics
           next if count.zero?
           {
             :label => pc.to_label,
-            :data => count,
+            :data => count
           }
         end.compact
       end

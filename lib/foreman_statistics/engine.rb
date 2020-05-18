@@ -30,18 +30,18 @@ module ForemanStatistics
 
         # Add permissions
         security_block :foreman_statistics do
-          permission :view_statistics, { :statistics => [:index, :show],
+          permission :view_statistics, { :statistics => %i[index show],
                                          :"api/v2/statistics" => [:index] }
 
           permission :view_foreman_statistics, { :'foreman_statistics/hosts' => [:new_action],
-                                                      :'foreman_statistics/react' => [:index] }
+                                                 :'foreman_statistics/react' => [:index] }
         end
 
         add_menu_item :top_menu, :statistics, {
-                        :caption => N_('Statistics'),
-                        :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :audits,
-                        :url_hash => { :controller => 'foreman_statistics/statistics', :action => :index },
-                      }
+          :caption => N_('Statistics'),
+          :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :audits,
+          :url_hash => { :controller => 'foreman_statistics/statistics', :action => :index }
+        }
 
         # Add a new role called 'Discovery' if it doesn't exist
         role 'ForemanStatistics', [:view_foreman_statistics]
@@ -59,7 +59,7 @@ module ForemanStatistics
     end
 
     initializer 'foreman_statistics.register_gettext', after: :load_config_initializers do |_app|
-      locale_dir = File.join(File.expand_path('../../..', __FILE__), 'locale')
+      locale_dir = File.join(File.expand_path('../..', __dir__), 'locale')
       locale_domain = 'foreman_statistics'
       Foreman::Gettext::Support.add_text_domain locale_domain, locale_dir
     end

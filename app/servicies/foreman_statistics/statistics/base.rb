@@ -26,7 +26,7 @@ module ForemanStatistics
       end
 
       def metadata
-        {:id => id, :title => title, :url => url, :search => search}
+        { :id => id, :title => title, :url => url, :search => search }
       end
 
       private

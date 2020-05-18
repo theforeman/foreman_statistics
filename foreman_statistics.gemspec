@@ -1,4 +1,4 @@
-require File.expand_path('../lib/foreman_statistics/version', __FILE__)
+require File.expand_path('lib/foreman_statistics/version', __dir__)
 
 Gem::Specification.new do |s|
   s.name        = 'foreman_statistics'
@@ -14,6 +14,9 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib,locale}/**/*'] + ['LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['test/**/*']
 
-  s.add_development_dependency 'rubocop'
   s.add_development_dependency 'rdoc'
+  s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'rubocop-minitest', '~> 0.9.0'
+  s.add_development_dependency 'rubocop-performance', '~> 1.5.2'
+  s.add_development_dependency 'rubocop-rails', '~> 2.5.2'
 end

@@ -1,6 +1,6 @@
 module ForemanStatistics
   class ReactController < ::ApplicationController
-    layout "foreman_statistics/layouts/application_react"
+    layout 'foreman_statistics/layouts/application_react'
 
     def index
       render html: nil, layout: true
