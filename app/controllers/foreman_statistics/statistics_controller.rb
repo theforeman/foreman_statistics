@@ -7,7 +7,7 @@ module ForemanStatistics
     end
 
     def show
-      render :json => {:id => @stat.id, :data => @stat.calculate.map(&:values)}
+      render :json => @stat.metadata.merge(:data => @stat.calculate.map(&:values))
     end
 
     private
