@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForemanPluginTemplateRoutes should create routes 1`] = `
+Object {
+  "statistics": Object {
+    "component": Object {
+      "$$typeof": Symbol(react.memo),
+      "WrappedComponent": [Function],
+      "compare": null,
+      "displayName": "Connect(Component)",
+      "type": [Function],
+    },
+    "exact": true,
+    "path": "/foreman_statistics/statistics",
+    "renderResult": <ContextProvider
+      value={
+        Object {
+          "store": Object {
+            "dispatch": [MockFunction],
+            "getState": [Function],
+            "subscribe": [MockFunction],
+          },
+          "subscription": Subscription {
+            "handleChangeWrapper": [Function],
+            "listeners": Object {
+              "notify": [Function],
+            },
+            "onStateChange": [Function],
+            "parentSub": undefined,
+            "store": Object {
+              "dispatch": [MockFunction],
+              "getState": [Function],
+              "subscribe": [MockFunction],
+            },
+            "unsubscribe": null,
+          },
+        }
+      }
+    >
+      <Connect(Component)
+        history={Object {}}
+        some="props"
+      />
+    </ContextProvider>,
+  },
+}
+`;
