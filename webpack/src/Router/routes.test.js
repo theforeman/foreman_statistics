@@ -13,12 +13,13 @@ describe('ForemanPluginTemplateRoutes', () => {
         dispatch: jest.fn(),
         getState: () => statisticsProps,
       };
-      const RouteComponent = shallow(
+      const RouteComponent = Route.component;
+      const component = shallow(
         <Provider store={store}>
-          <Route.component history={{}} some="props" />
+          <RouteComponent history={{}} some="props" />
         </Provider>
       );
-      Route.renderResult = RouteComponent;
+      Route.renderResult = component;
     });
 
     expect(Routes).toMatchSnapshot();
