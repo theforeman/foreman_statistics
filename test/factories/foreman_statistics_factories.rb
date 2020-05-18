@@ -16,9 +16,12 @@ FactoryBot.define do
     end
 
     after(:create) do |trend, evaluator|
+      # only trends for a certain value have counters
       if trend.fact_value.present?
-        trend.trend_counters = (0...evaluator.counter_count).map { |idx| FactoryBot.build(:foreman_statistics_trend_counter, trend: trend, created_at: Time.zone.now - idx.minutes) }
-      end # only trends for a certain value have counters
+        trend.trend_counters = (0...evaluator.counter_count).map do |idx|
+          FactoryBot.build(:foreman_statistics_trend_counter, trend: trend, created_at: Time.zone.now - idx.minutes)
+        end
+      end
     end
   end
 

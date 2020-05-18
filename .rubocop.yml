@@ -21,6 +21,9 @@ Layout/EmptyLineAfterGuardClause:
 Layout/LineLength:
   Enabled: 111 # TODO: discuss and set this
 
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
 Rails:
   Enabled: true
 
