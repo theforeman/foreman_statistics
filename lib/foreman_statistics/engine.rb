@@ -37,20 +37,20 @@ module ForemanStatistics
                                                       :'foreman_statistics/react' => [:index] }
         end
 
+        add_menu_item :top_menu, :statistics, {
+                        :caption => N_('Statistics'),
+                        :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :audits,
+                        :url_hash => { :controller => 'foreman_statistics/statistics', :action => :index },
+                      }
+
         # Add a new role called 'Discovery' if it doesn't exist
         role 'ForemanStatistics', [:view_foreman_statistics]
       end
     end
 
     # Include concerns in this config.to_prepare block
-    config.to_prepare do
-      begin
-        Host::Managed.send(:include, ForemanStatistics::HostExtensions)
-        HostsHelper.send(:include, ForemanStatistics::HostsHelperExtensions)
-      rescue => e
-        Rails.logger.warn "ForemanStatistics: skipping engine hook (#{e})"
-      end
-    end
+    # config.to_prepare do
+    # end
 
     rake_tasks do
       Rake::Task['db:seed'].enhance do

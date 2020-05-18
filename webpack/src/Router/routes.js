@@ -1,10 +1,10 @@
-import WelcomPage from './WelcomePage';
+import StatisticsPage from './StatisticsPage';
 
 const routes = {
-  welcome: {
-    path: '/foreman_statistics',
+  statistics: {
+    path: '/foreman_statistics/statistics',
     exact: true,
-    component: WelcomPage,
+    component: StatisticsPage,
   },
 };
 
