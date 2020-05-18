@@ -49,8 +49,20 @@ module ForemanStatistics
     end
 
     # Include concerns in this config.to_prepare block
-    # config.to_prepare do
-    # end
+    config.to_prepare do
+      ::ComputeResource.include ForemanStatistics::ComputeResourceDecorations
+      ::Environment.include ForemanStatistics::EnvironmentDecorations
+      ::Hostgroup.include ForemanStatistics::HostgroupDecorations
+      ::Model.include ForemanStatistics::ModelDecorations
+      ::Operatingsystem.include ForemanStatistics::OperatingsystemDecorations
+      ::Setting.include ForemanStatistics::SettingDecorations
+      ::Setting::General.prepend ForemanStatistics::GeneralSettingDecorations
+      begin
+        ::Setting::General.load_defaults
+      rescue ActiveRecord::NoDatabaseError => e
+        Rails.logger.warn e
+      end
+    end
 
     rake_tasks do
       Rake::Task['db:seed'].enhance do
