@@ -41,3 +41,7 @@ Style/FrozenStringLiteralComment:
 # Support both ruby19 and hash_rockets
 Style/HashSyntax:
   Enabled: false
+
+Style/Semicolon:
+  Exclude:
+    - 'test/functional/**/*.rb'
