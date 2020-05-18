@@ -1,3 +1,5 @@
+![CI](https://github.com/theforeman/foreman_statistics/workflows/CI/badge.svg)
+
 # ForemanStatistics
 
 *Introdction here*
