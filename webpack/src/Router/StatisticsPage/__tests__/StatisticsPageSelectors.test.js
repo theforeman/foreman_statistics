@@ -1,4 +1,4 @@
-import { testSelectorsSnapshotWithFixtures } from '../../../../common/testHelpers';
+import { testSelectorsSnapshotWithFixtures } from '@theforeman/test';
 import {
   selectStatisticsPage,
   selectStatisticsMetadata,

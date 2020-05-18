@@ -1,5 +1,5 @@
 import { noop } from 'foremanReact/common/helpers';
-import { statisticsMeta } from '../../../components/StatisticsChartsList/StatisticsChartsList.fixtures';
+import { statisticsMeta } from '../../Components/StatisticsChartsList/StatisticsChartsList.fixtures';
 
 export const statisticsProps = {
   statisticsMeta,
