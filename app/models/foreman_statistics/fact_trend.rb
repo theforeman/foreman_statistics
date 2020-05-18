@@ -1,6 +1,6 @@
 module ForemanStatistics
   class FactTrend < Trend
-    validates :trendable_id, :presence => true, :uniqueness => {:scope => [:trendable_type, :fact_value] }, :allow_blank => false
+    validates :trendable_id, :presence => true, :uniqueness => { :scope => %i[trendable_type fact_value] }, :allow_blank => false
 
     before_save :update_fact_name
 
@@ -22,7 +22,7 @@ module ForemanStatistics
 
     def self.create_values(fact_name_id)
       FactValue.select('fact_name_id, value').group(:fact_name_id, :value).where(:fact_name_id => fact_name_id).includes(:fact_name).map do |fact|
-        create(:trendable_type => "FactName",
+        create(:trendable_type => 'FactName',
                :trendable_id => fact.fact_name.id,
                :fact_name => fact.fact_name.name,
                :fact_value => fact.value,
@@ -45,7 +45,7 @@ module ForemanStatistics
     end
 
     def find_hosts
-      Host.joins(:fact_values).where(:fact_values => {:value => fact_value}).order(:name)
+      Host.joins(:fact_values).where(:fact_values => { :value => fact_value }).order(:name)
     end
 
     private

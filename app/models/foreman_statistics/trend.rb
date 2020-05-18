@@ -9,7 +9,7 @@ module ForemanStatistics
     belongs_to :trendable, :polymorphic => true
     has_many :trend_counters, :dependent => :destroy
 
-    scope :has_value, -> { where('fact_value IS NOT NULL').order("fact_value") }
+    scope :has_value, -> { where('fact_value IS NOT NULL').order('fact_value') }
     scope :types, -> { where(:fact_value => nil) }
 
     def to_param
@@ -21,7 +21,7 @@ module ForemanStatistics
     end
 
     def self.build_trend(trend_params = {})
-      (trend_params[:trendable_type] == 'FactName') ? FactTrend.new(trend_params) : ForemanTrend.new(trend_params)
+      trend_params[:trendable_type] == 'FactName' ? FactTrend.new(trend_params) : ForemanTrend.new(trend_params)
     end
 
     private

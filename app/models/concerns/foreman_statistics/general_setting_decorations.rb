@@ -9,8 +9,8 @@ module ForemanStatistics
     module ClassMethodsPrepend
       def default_settings
         super.concat([
-          set('max_trend', N_("Max days for Trends graphs"), 30, N_('Max trends')),
-        ])
+                       set('max_trend', N_('Max days for Trends graphs'), 30, N_('Max trends'))
+                     ])
       end
     end
   end
