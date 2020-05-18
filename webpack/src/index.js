@@ -1,1 +1,1 @@
-export { default } from './PluginName';
+export { default } from './ForemanStatistics';
