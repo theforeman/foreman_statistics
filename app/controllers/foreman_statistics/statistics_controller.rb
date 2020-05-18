@@ -1,5 +1,5 @@
 module ForemanStatistics
-  class StatisticsController < ApplicationController
+  class StatisticsController < ::ApplicationController
     before_action :find_stat, :only => [:show]
 
     def index
