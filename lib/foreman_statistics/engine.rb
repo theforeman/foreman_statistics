@@ -10,6 +10,7 @@ module ForemanStatistics
 
     # Add any db migrations
     initializer 'foreman_statistics.load_app_instance_data' do |app|
+      next unless Gem::Dependency.new('', '>= 2.2').match?('', SETTINGS[:version])
       ForemanStatistics::Engine.paths['db/migrate'].existent.each do |path|
         app.config.paths['db/migrate'] << path
       end
