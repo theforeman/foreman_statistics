@@ -33,9 +33,22 @@ module ForemanStatistics
           permission :view_statistics, { :statistics => %i[index show],
                                          :"api/v2/statistics" => [:index] }
 
-          permission :view_foreman_statistics, { :'foreman_statistics/hosts' => [:new_action],
-                                                 :'foreman_statistics/react' => [:index] }
+          permission :view_trends,     { :'foreman_statistics/trends' => %i[index show welcome],
+                                         :'foreman_statistics/api/v2/trends' => %i[index show] },
+            :resource_type => 'ForemanStatistics::Trend'
+          permission :create_trends,   { :'foreman_statistics/trends' => %i[new create],
+                                         :'foreman_statistics/api/v2/trends' => %i[new create] },
+            :resource_type => 'ForemanStatistics::Trend'
+          permission :edit_trends,     { :'foreman_statistics/trends' => %i[edit update] },
+            :resource_type => 'ForemanStatistics::Trend'
+          permission :destroy_trends,  { :'foreman_statistics/trends' => [:destroy],
+                                         :'foreman_statistics/api/v2/trends' => [:destroy] },
+            :resource_type => 'ForemanStatistics::Trend'
+          permission :update_trends,   { :'foreman_statistics/trends' => [:count] },
+            :resource_type => 'ForemanStatistics::Trend'
         end
+
+        # add_resource_permissions_to_default_roles(['ForemanStatistics::Trend'])
 
         add_menu_item :top_menu, :trends, {
           :caption => N_('Trends'),
@@ -48,9 +61,6 @@ module ForemanStatistics
           :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :trends,
           :url_hash => { :controller => 'foreman_statistics/statistics', :action => :index }
         }
-
-        # Add a new role called 'Discovery' if it doesn't exist
-        role 'ForemanStatistics', [:view_foreman_statistics]
       end
     end
 

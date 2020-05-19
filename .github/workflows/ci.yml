@@ -34,7 +34,7 @@ jobs:
         ruby-version: [2.5, 2.6]
         node-version: [12]
     steps:
-      - run: sudo apt-get install build-essential libcurl4-openssl-dev libvirt-dev ruby-libvirt zlib1g-dev libpq-dev
+      - run: sudo apt-get install build-essential libcurl4-openssl-dev zlib1g-dev libpq-dev
       - uses: actions/checkout@v2
         with:
           repository: theforeman/foreman
@@ -60,7 +60,7 @@ jobs:
         run: |
           echo "gem 'foreman_statistics', path: './foreman_statistics'" > bundler.d/foreman_statistics.local.rb
           gem install bundler
-          bundle config set without journald development console mysql2 sqlite
+          bundle config set without journald development console libvirt
           bundle config set path vendor/bundle
       - name: Prepare test env
         run: |
