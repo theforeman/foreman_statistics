@@ -37,9 +37,15 @@ module ForemanStatistics
                                                  :'foreman_statistics/react' => [:index] }
         end
 
+        add_menu_item :top_menu, :trends, {
+          :caption => N_('Trends'),
+          :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :audits,
+          :url_hash => { :controller => 'foreman_statistics/trends', :action => :index }
+        }
+
         add_menu_item :top_menu, :statistics, {
           :caption => N_('Statistics'),
-          :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :audits,
+          :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :trends,
           :url_hash => { :controller => 'foreman_statistics/statistics', :action => :index }
         }
 

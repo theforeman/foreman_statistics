@@ -1,4 +1,11 @@
 ForemanStatistics::Engine.routes.draw do
+  resources :trends do
+    collection do
+      post 'count'
+      get 'help', :action => :welcome
+    end
+  end
+
   resources :statistics, :only => %i[index show], constraints: ->(req) { req.format == :json }
   match 'statistics' => 'react#index', :via => :get
 
