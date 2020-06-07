@@ -16,6 +16,11 @@ module ForemanStatistics
       end
     end
 
+    initializer 'foreman_statistics.cleanup_core' do
+      next if Gem::Dependency.new('', '>= 2.2').match?('', SETTINGS[:version])
+      Permission.where(:resource_type => 'Trend').update_all(:resource_type => 'ForemanStatistics::Trend')
+    end
+
     initializer 'foreman_statistics.register_plugin', :before => :finisher_hook do |_app|
       Foreman::Plugin.register :foreman_statistics do
         requires_foreman '>= 2.1.0'
@@ -29,10 +34,17 @@ module ForemanStatistics
         # Add Global JS file for extending foreman-core components and routes
         register_global_js_file 'fills'
 
+        # Remove core permissions
+        %i[view_statistics view_trends create_trends edit_trends destroy_trends update_trends].each do |perm_name|
+          p = Foreman::AccessControl.permission(perm_name)
+          Foreman::AccessControl.remove_permission(p)
+        end
+
         # Add permissions
         security_block :foreman_statistics do
-          permission :view_statistics, { :statistics => %i[index show],
-                                         :"api/v2/statistics" => [:index] }
+          permission :view_statistics, { :'foreman_statistics/react' => [:index],
+                                         :'foreman_statistics/statistics' => %i[index show],
+                                         :'foreman_statistics/api/v2/statistics' => [:index] }
 
           permission :view_trends,     { :'foreman_statistics/trends' => %i[index show welcome],
                                          :'foreman_statistics/api/v2/trends' => %i[index show] },

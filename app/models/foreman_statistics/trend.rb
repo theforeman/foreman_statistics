@@ -20,6 +20,10 @@ module ForemanStatistics
       'label'.freeze
     end
 
+    def self.humanize_class_name(_name = nil)
+      super('Trend')
+    end
+
     def self.build_trend(trend_params = {})
       trend_params[:trendable_type] == 'FactName' ? FactTrend.new(trend_params) : ForemanTrend.new(trend_params)
     end
