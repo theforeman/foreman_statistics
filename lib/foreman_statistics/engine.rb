@@ -8,17 +8,13 @@ module ForemanStatistics
     config.autoload_paths += Dir["#{config.root}/app/models/concerns"]
     config.autoload_paths += Dir["#{config.root}/app/overrides"]
 
+    config.paths['db/migrate'] << 'db/migrate_foreman' if Gem::Dependency.new('', '>= 2.2').match?('', SETTINGS[:version])
+
     # Add any db migrations
     initializer 'foreman_statistics.load_app_instance_data' do |app|
-      next unless Gem::Dependency.new('', '>= 2.2').match?('', SETTINGS[:version])
       ForemanStatistics::Engine.paths['db/migrate'].existent.each do |path|
         app.config.paths['db/migrate'] << path
       end
-    end
-
-    initializer 'foreman_statistics.cleanup_core' do
-      next if Gem::Dependency.new('', '>= 2.2').match?('', SETTINGS[:version])
-      Permission.where(:resource_type => 'Trend').update_all(:resource_type => 'ForemanStatistics::Trend')
     end
 
     initializer 'foreman_statistics.register_plugin', :before => :finisher_hook do |_app|
