@@ -8,6 +8,8 @@ module ForemanStatistics
     config.autoload_paths += Dir["#{config.root}/app/models/concerns"]
     config.autoload_paths += Dir["#{config.root}/app/overrides"]
 
+    config.paths['db/migrate'] << 'db/migrate_foreman' if Gem::Dependency.new('', '>= 2.2').match?('', SETTINGS[:version])
+
     # Add any db migrations
     initializer 'foreman_statistics.load_app_instance_data' do |app|
       ForemanStatistics::Engine.paths['db/migrate'].existent.each do |path|
@@ -28,29 +30,64 @@ module ForemanStatistics
         # Add Global JS file for extending foreman-core components and routes
         register_global_js_file 'fills'
 
+        # Remove core permissions
+        %i[view_statistics view_trends create_trends edit_trends destroy_trends update_trends].each do |perm_name|
+          p = Foreman::AccessControl.permission(perm_name)
+          Foreman::AccessControl.remove_permission(p)
+        end
+
         # Add permissions
         security_block :foreman_statistics do
-          permission :view_statistics, { :statistics => %i[index show],
-                                         :"api/v2/statistics" => [:index] }
+          permission :view_statistics, { :'foreman_statistics/react' => [:index],
+                                         :'foreman_statistics/statistics' => %i[index show],
+                                         :'foreman_statistics/api/v2/statistics' => [:index] }
 
-          permission :view_foreman_statistics, { :'foreman_statistics/hosts' => [:new_action],
-                                                 :'foreman_statistics/react' => [:index] }
+          permission :view_trends,     { :'foreman_statistics/trends' => %i[index show welcome],
+                                         :'foreman_statistics/api/v2/trends' => %i[index show] },
+            :resource_type => 'ForemanStatistics::Trend'
+          permission :create_trends,   { :'foreman_statistics/trends' => %i[new create],
+                                         :'foreman_statistics/api/v2/trends' => %i[new create] },
+            :resource_type => 'ForemanStatistics::Trend'
+          permission :edit_trends,     { :'foreman_statistics/trends' => %i[edit update] },
+            :resource_type => 'ForemanStatistics::Trend'
+          permission :destroy_trends,  { :'foreman_statistics/trends' => [:destroy],
+                                         :'foreman_statistics/api/v2/trends' => [:destroy] },
+            :resource_type => 'ForemanStatistics::Trend'
+          permission :update_trends,   { :'foreman_statistics/trends' => [:count] },
+            :resource_type => 'ForemanStatistics::Trend'
         end
+
+        # add_resource_permissions_to_default_roles(['ForemanStatistics::Trend'])
+
+        add_menu_item :top_menu, :trends, {
+          :caption => N_('Trends'),
+          :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :audits,
+          :url_hash => { :controller => 'foreman_statistics/trends', :action => :index }
+        }
 
         add_menu_item :top_menu, :statistics, {
           :caption => N_('Statistics'),
-          :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :audits,
+          :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :trends,
           :url_hash => { :controller => 'foreman_statistics/statistics', :action => :index }
         }
-
-        # Add a new role called 'Discovery' if it doesn't exist
-        role 'ForemanStatistics', [:view_foreman_statistics]
       end
     end
 
     # Include concerns in this config.to_prepare block
-    # config.to_prepare do
-    # end
+    config.to_prepare do
+      ::ComputeResource.include ForemanStatistics::ComputeResourceDecorations
+      ::Environment.include ForemanStatistics::EnvironmentDecorations
+      ::Hostgroup.include ForemanStatistics::HostgroupDecorations
+      ::Model.include ForemanStatistics::ModelDecorations
+      ::Operatingsystem.include ForemanStatistics::OperatingsystemDecorations
+      ::Setting.include ForemanStatistics::SettingDecorations
+      ::Setting::General.prepend ForemanStatistics::GeneralSettingDecorations
+      begin
+        ::Setting::General.load_defaults
+      rescue ActiveRecord::NoDatabaseError => e
+        Rails.logger.warn e
+      end
+    end
 
     rake_tasks do
       Rake::Task['db:seed'].enhance do

@@ -1,0 +1,6 @@
+---
+attributes60:
+  name: max_trend
+  category: Setting::General
+  default: 30
+  description: 'Max days for Trends graphs'

@@ -21,8 +21,16 @@ Layout/EmptyLineAfterGuardClause:
 Layout/LineLength:
   Enabled: 111 # TODO: discuss and set this
 
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
 Rails:
   Enabled: true
+
+Rails/SkipsModelValidations:
+  Exclude:
+    - 'db/migrate/*.rb'
+    - 'lib/foreman_statistics/engine.rb'
 
 Style/Alias:
   EnforcedStyle: prefer_alias_method
@@ -38,3 +46,6 @@ Style/FrozenStringLiteralComment:
 # Support both ruby19 and hash_rockets
 Style/HashSyntax:
   Enabled: false
+Style/Semicolon:
+  Exclude:
+    - 'test/functional/**/*.rb'
