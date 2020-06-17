@@ -73,6 +73,12 @@ module ForemanStatistics
       end
     end
 
+    initializer 'foreman_statistics.apipie' do
+      p = Foreman::Plugin.find(:foreman_statistics)
+      p.apipie_documented_controllers(["#{ForemanStatistics::Engine.root}/app/controllers/foreman_statistics/api/v2/*.rb"])
+      Apipie.configuration.checksum_path += ['/foreman_statistics/api/']
+    end
+
     # Include concerns in this config.to_prepare block
     config.to_prepare do
       ::ComputeResource.include ForemanStatistics::ComputeResourceDecorations
