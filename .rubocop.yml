@@ -49,3 +49,6 @@ Style/HashSyntax:
 Style/Semicolon:
   Exclude:
     - 'test/functional/**/*.rb'
+
+Metrics/CyclomaticComplexity:
+  Max: 9
