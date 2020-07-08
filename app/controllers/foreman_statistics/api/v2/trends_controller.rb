@@ -4,6 +4,7 @@ module ForemanStatistics
       class TrendsController < ::Api::V2::BaseController
         include ForemanStatistics::Parameters::Trend
 
+        before_action :show_deprecation_for_core_routes
         before_action :find_resource, :only => %i[show destroy]
 
         TRENDABLE_TYPES = %w[
@@ -51,6 +52,13 @@ module ForemanStatistics
 
         def resource_scope(options = {})
           @resource_scope ||= scope_for(ForemanStatistics::Trend.types, options)
+        end
+
+        private
+
+        def show_deprecation_for_core_routes
+          return if request.path.starts_with?('/foreman_statistics')
+          Foreman::Deprecation.api_deprecation_warning('/api/v2/trends API endpoints are deprecated, please use /foreman_statistics/api/v2/trends instead')
         end
       end
     end
