@@ -8,7 +8,7 @@ module ForemanStatistics
     config.autoload_paths += Dir["#{config.root}/app/models/concerns"]
     config.autoload_paths += Dir["#{config.root}/app/overrides"]
 
-    config.paths['db/migrate'] << 'db/migrate_foreman' if Gem::Dependency.new('', '>= 2.2').match?('', SETTINGS[:version])
+    config.paths['db/migrate'] << 'db/migrate_foreman' unless Gem::Version.new(SETTINGS[:version]).release < Gem::Version.new('2.2')
 
     # Add any db migrations
     initializer 'foreman_statistics.load_app_instance_data' do |app|
