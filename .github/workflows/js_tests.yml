@@ -15,6 +15,11 @@ jobs:
         node-version: [10, 12]
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          repository: theforeman/foreman
+          ref: develop
+          path: foreman
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -23,6 +28,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version:  ${{ matrix.node-version }}
+      - name: Foreman npm install
+        working-directory: './foreman'
+        run: npm install
       - name: Plugin npm install
         run: npm install
       - name: Run plugin linter
