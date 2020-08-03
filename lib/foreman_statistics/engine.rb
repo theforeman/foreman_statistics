@@ -79,6 +79,12 @@ module ForemanStatistics
       Apipie.configuration.checksum_path += ['/foreman_statistics/api/']
     end
 
+    initializer 'foreman_statistics.trend_counter_job' do
+      ::Foreman::Application.dynflow.config.on_init do |world|
+        TrendCounterJob.spawn_if_missing(world)
+      end
+    end
+
     # Include concerns in this config.to_prepare block
     config.to_prepare do
       ::ComputeResource.include ForemanStatistics::ComputeResourceDecorations
