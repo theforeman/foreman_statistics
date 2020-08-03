@@ -10,8 +10,10 @@ import {
 import { statisticsProps } from '../StatisticsPage.fixtures';
 
 const state = {
-  statisticsPage: {
-    ...statisticsProps,
+  foremanStatistics: {
+    statisticsPage: {
+      ...statisticsProps,
+    },
   },
 };
 

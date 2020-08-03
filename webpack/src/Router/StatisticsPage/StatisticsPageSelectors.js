@@ -1,4 +1,5 @@
-export const selectStatisticsPage = state => state.statisticsPage;
+export const selectStatisticsPage = state =>
+  state.foremanStatistics.statisticsPage;
 
 export const selectStatisticsMetadata = state =>
   selectStatisticsPage(state).metadata;
