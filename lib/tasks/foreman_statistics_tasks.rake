@@ -45,8 +45,9 @@ end
 namespace :test do
   desc 'Test ForemanStatistics'
   Rake::TestTask.new(:foreman_statistics) do |t|
-    test_dir = File.join(File.dirname(__FILE__), '../..', 'test')
-    t.libs << ['test', test_dir]
+    test_dir = File.expand_path('../../test', __dir__)
+    t.libs << 'test'
+    t.libs << test_dir
     t.pattern = "#{test_dir}/**/*_test.rb"
     t.verbose = true
     t.warning = false
