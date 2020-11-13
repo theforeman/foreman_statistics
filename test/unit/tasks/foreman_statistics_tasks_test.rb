@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'test_statistics_helper'
 require 'rake'
 
 class ForemanStatisticsTasksTest < ActiveSupport::TestCase
