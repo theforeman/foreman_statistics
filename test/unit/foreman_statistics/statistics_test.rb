@@ -1,4 +1,4 @@
-require_relative '../../test_plugin_helper'
+require 'test_statistics_helper'
 
 module ForemanStatistics
   class StatisticsTest < ActiveSupport::TestCase

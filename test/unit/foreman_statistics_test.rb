@@ -1,4 +1,4 @@
-require 'test_plugin_helper'
+require 'test_statistics_helper'
 
 class ForemanStatisticsTest < ActiveSupport::TestCase
   setup do

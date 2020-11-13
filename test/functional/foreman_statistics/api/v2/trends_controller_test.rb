@@ -1,4 +1,4 @@
-require_relative '../../../../test_plugin_helper'
+require 'test_statistics_helper'
 
 class ForemanStatistics::Api::V2::TrendsControllerTest < ActionController::TestCase
   setup do

@@ -1,4 +1,4 @@
-require 'test_plugin_helper'
+require 'test_statistics_helper'
 require 'unit/shared/access_permissions_test_base'
 
 # Permissions are added in AccessPermissions with lists of controllers and

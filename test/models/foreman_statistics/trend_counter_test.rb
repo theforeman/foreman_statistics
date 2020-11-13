@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'test_statistics_helper'
 
 module ForemanStatistics
   class TrendCounterTest < ActiveSupport::TestCase
