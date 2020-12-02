@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { reducers as statisticsPageReducers } from './Router/StatisticsPage';
+import statisticsPageReducers from './Pages/StatisticsPage/reducers';
 
 const reducers = {
   foremanStatistics: combineReducers(statisticsPageReducers),
