@@ -2,12 +2,10 @@
 #
 # This file is distributed under the same license as foreman_statistics.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-20 08:46+0100\n"
 "PO-Revision-Date: 2014-08-20 08:54+0100\n"
 "Last-Translator: Foreman Team <foreman-dev@googlegroups.com>\n"
 "Language-Team: Foreman Team <foreman-dev@googlegroups.com>\n"
@@ -17,3 +15,184 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Action"
+msgstr ""
+
+msgid "Action with sub plans"
+msgstr ""
+
+msgid "Add Trend Counter"
+msgstr ""
+
+msgid "Architecture Distribution"
+msgstr ""
+
+msgid "Average Memory Usage"
+msgstr ""
+
+msgid "Average Swap Usage"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Class Distribution"
+msgstr ""
+
+msgid "Compute Resource Distribution"
+msgstr ""
+
+msgid "Compute resource"
+msgstr ""
+
+msgid "Create Trend"
+msgstr ""
+
+msgid "Create a trend counter"
+msgstr ""
+
+msgid "Delete a trend counter"
+msgstr ""
+
+msgid "Delete all the trend history for %s?"
+msgstr ""
+
+msgid "Display Name"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Edit Trend %s"
+msgstr ""
+
+msgid "Environment"
+msgstr ""
+
+msgid "Environment Distribution"
+msgstr ""
+
+msgid "Expand the chart"
+msgstr ""
+
+msgid "Fact Name"
+msgstr ""
+
+msgid "Facts"
+msgstr ""
+
+msgid "Get statistics"
+msgstr ""
+
+msgid "Hardware"
+msgstr ""
+
+msgid "Host Group Distribution"
+msgstr ""
+
+msgid "Host group"
+msgstr ""
+
+msgid "Hosts"
+msgstr ""
+
+msgid "Import Puppet classes"
+msgstr ""
+
+msgid "Import facts"
+msgstr ""
+
+msgid "Last update:"
+msgstr ""
+
+msgid "Learn more about this in the documentation."
+msgstr ""
+
+msgid "List of trends counters"
+msgstr ""
+
+msgid "Location Distribution"
+msgstr ""
+
+msgid "Max days for Trends graphs"
+msgstr ""
+
+msgid "Max trends"
+msgstr ""
+
+msgid "Model"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "No Charts To Load"
+msgstr ""
+
+msgid "No data available"
+msgstr ""
+
+msgid "No data for this trend."
+msgstr ""
+
+msgid "Number of CPUs"
+msgstr ""
+
+msgid "Number of Hosts"
+msgstr ""
+
+msgid "Operating system"
+msgstr ""
+
+msgid "Organization Distribution"
+msgstr ""
+
+msgid "Please Select"
+msgstr ""
+
+msgid "Remote action:"
+msgstr ""
+
+msgid "Show Host"
+msgstr ""
+
+msgid "Show Trends"
+msgstr ""
+
+msgid "Show a trend"
+msgstr ""
+
+msgid "Statistics"
+msgstr ""
+
+msgid "Statistics and Trends for Foreman gives users overview of their infrastructure."
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Trend Counter Job"
+msgstr ""
+
+msgid "Trend of the last %s days."
+msgstr ""
+
+msgid "Trends"
+msgstr ""
+
+msgid "Trends for %s"
+msgstr ""
+
+msgid "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts."
+msgstr ""
+
+msgid "free memory"
+msgstr ""
+
+msgid "last %s day"
+msgid_plural "last %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "used memory"
+msgstr ""
