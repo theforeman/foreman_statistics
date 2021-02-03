@@ -1,2 +1,2 @@
 # Matches foreman_statistics.gemspec
-_('TODO: Description of ForemanStatistics.')
+_('Statistics and Trends for Foreman gives users overview of their infrastructure.')
