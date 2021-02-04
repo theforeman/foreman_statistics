@@ -1,31 +1,38 @@
-# foreman_statistics
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_statistics package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# This file is distributed under the same license as foreman_statistics.
+# Translators:
+# sziolkow <sziolkow@gmail.com>, 2021
+# Michał Foryt <michal.foryt@gmail.com>, 2021
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2014-08-20 08:54+0100\n"
-"Last-Translator: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language-Team: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-02-03 22:59+0000\n"
+"Last-Translator: Michał Foryt <michal.foryt@gmail.com>, 2021\n"
+"Language-Team: Polish (https://www.transifex.com/foreman/teams/114/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12"
+" || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n"
+"%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 msgid "Action"
-msgstr ""
+msgstr "Akcja"
 
 msgid "Action with sub plans"
 msgstr ""
 
 msgid "Add Trend Counter"
-msgstr ""
+msgstr "Dodaj licznik trendów"
 
 msgid "Architecture Distribution"
-msgstr ""
+msgstr "Dystrybucja architektury"
 
 msgid "Average Memory Usage"
 msgstr ""
@@ -34,16 +41,16 @@ msgid "Average Swap Usage"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 msgid "Class Distribution"
-msgstr ""
+msgstr "Dystrybucja klasy"
 
 msgid "Compute Resource Distribution"
 msgstr ""
 
 msgid "Compute resource"
-msgstr ""
+msgstr "Zasób obliczeniowy"
 
 msgid "Create Trend"
 msgstr ""
@@ -55,46 +62,46 @@ msgid "Delete a trend counter"
 msgstr ""
 
 msgid "Delete all the trend history for %s?"
-msgstr ""
+msgstr "Skasować całą historię trendów dla %s?"
 
 msgid "Display Name"
-msgstr ""
+msgstr "Wyświetlana nazwa"
 
 msgid "Edit"
-msgstr ""
+msgstr "Edytuj"
 
 msgid "Edit Trend %s"
-msgstr ""
+msgstr "Edytuj trend %s"
 
 msgid "Environment"
-msgstr ""
+msgstr "Środowisko"
 
 msgid "Environment Distribution"
 msgstr ""
 
 msgid "Expand the chart"
-msgstr ""
+msgstr "Rozwiń wykres"
 
 msgid "Fact Name"
-msgstr ""
+msgstr "Nazwa faktu"
 
 msgid "Facts"
-msgstr ""
+msgstr "Fakty"
 
 msgid "Get statistics"
-msgstr ""
+msgstr "Uzyskaj statystyki"
 
 msgid "Hardware"
-msgstr ""
+msgstr "Hardware"
 
 msgid "Host Group Distribution"
 msgstr ""
 
 msgid "Host group"
-msgstr ""
+msgstr "Grupa hostów"
 
 msgid "Hosts"
-msgstr ""
+msgstr "Hosty"
 
 msgid "Import Puppet classes"
 msgstr ""
@@ -106,7 +113,7 @@ msgid "Last update:"
 msgstr ""
 
 msgid "Learn more about this in the documentation."
-msgstr ""
+msgstr "Dowiedz się więcej na ten temat w dokumentacji."
 
 msgid "List of trends counters"
 msgstr ""
@@ -115,16 +122,16 @@ msgid "Location Distribution"
 msgstr ""
 
 msgid "Max days for Trends graphs"
-msgstr ""
+msgstr "Maksymalna liczba dni trendów wykresów"
 
 msgid "Max trends"
-msgstr ""
+msgstr "Maksymalna ilość trendy"
 
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 msgid "No Charts To Load"
 msgstr ""
@@ -133,61 +140,61 @@ msgid "No data available"
 msgstr ""
 
 msgid "No data for this trend."
-msgstr ""
+msgstr "Brak danych dla tego trendu"
 
 msgid "Number of CPUs"
-msgstr ""
+msgstr "Liczba CPU"
 
 msgid "Number of Hosts"
-msgstr ""
+msgstr "Liczba hostów"
 
 msgid "Operating system"
-msgstr ""
+msgstr "System operacyjny"
 
 msgid "Organization Distribution"
 msgstr ""
 
 msgid "Please Select"
-msgstr ""
+msgstr "Proszę wybrać"
 
 msgid "Remote action:"
 msgstr ""
 
 msgid "Show Host"
-msgstr ""
+msgstr "Pokaż hosty"
 
 msgid "Show Trends"
-msgstr ""
+msgstr "Pokaż trendy"
 
 msgid "Show a trend"
 msgstr ""
 
 msgid "Statistics"
-msgstr ""
+msgstr "Statystyki"
 
 msgid "Statistics and Trends for Foreman gives users overview of their infrastructure."
 msgstr ""
 
 msgid "Submit"
-msgstr ""
+msgstr "Wyślij"
 
 msgid "Trend Counter Job"
 msgstr ""
 
 msgid "Trend of the last %s days."
-msgstr ""
+msgstr "Trend ostatnich %s dni"
 
 msgid "Trends"
-msgstr ""
+msgstr "Trendy"
 
 msgid "Trends for %s"
-msgstr ""
+msgstr "Tendencje dla %s"
 
 msgid "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts."
 msgstr ""
 
 msgid "free memory"
-msgstr ""
+msgstr "wolna pamięć"
 
 msgid "last %s day"
 msgid_plural "last %s days"
@@ -195,4 +202,4 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "used memory"
-msgstr ""
+msgstr "używana pamięć"

@@ -1,31 +1,39 @@
-# foreman_statistics
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_statistics package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# This file is distributed under the same license as foreman_statistics.
+# Translators:
+# Maxim Burgerhout <maxim@wzzrd.com>, 2021
+# dschutterop <daniel@schutterop.nl>, 2021
+# EmielK <emiel@kremers.us>, 2021
+# Mark Olie <mark.transifex@oliekoets.nl>, 2021
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2014-08-20 08:54+0100\n"
-"Last-Translator: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language-Team: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-02-03 22:59+0000\n"
+"Last-Translator: Mark Olie <mark.transifex@oliekoets.nl>, 2021\n"
+"Language-Team: Dutch (Netherlands) (https://www.transifex.com/foreman/teams/11"
+"4/nl_NL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl_NL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Action"
-msgstr ""
+msgstr "Actie"
 
 msgid "Action with sub plans"
 msgstr ""
 
 msgid "Add Trend Counter"
-msgstr ""
+msgstr "Trend Teller Toevoegen"
 
 msgid "Architecture Distribution"
-msgstr ""
+msgstr "Architectuur Distributie"
 
 msgid "Average Memory Usage"
 msgstr ""
@@ -34,16 +42,16 @@ msgid "Average Swap Usage"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 msgid "Class Distribution"
-msgstr ""
+msgstr "Class Distributie"
 
 msgid "Compute Resource Distribution"
 msgstr ""
 
 msgid "Compute resource"
-msgstr ""
+msgstr "Compute resource"
 
 msgid "Create Trend"
 msgstr ""
@@ -61,10 +69,10 @@ msgid "Display Name"
 msgstr ""
 
 msgid "Edit"
-msgstr ""
+msgstr "Bewerken"
 
 msgid "Edit Trend %s"
-msgstr ""
+msgstr "Bewerk Trend %s"
 
 msgid "Environment"
 msgstr ""
@@ -73,7 +81,7 @@ msgid "Environment Distribution"
 msgstr ""
 
 msgid "Expand the chart"
-msgstr ""
+msgstr "Klap de kaart uit"
 
 msgid "Fact Name"
 msgstr ""
@@ -82,7 +90,7 @@ msgid "Facts"
 msgstr ""
 
 msgid "Get statistics"
-msgstr ""
+msgstr "Toon statistieken"
 
 msgid "Hardware"
 msgstr ""
@@ -124,7 +132,7 @@ msgid "Model"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 msgid "No Charts To Load"
 msgstr ""

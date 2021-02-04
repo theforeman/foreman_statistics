@@ -1,31 +1,38 @@
-# foreman_statistics
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_statistics package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# This file is distributed under the same license as foreman_statistics.
+# Translators:
+# 0868a4d1af5275b3f70b0a6dac4c99a4, 2021
+# ChrisLee <chris_lee@hiiir.com>, 2021
+# Bryan Kearney <bryan.kearney@gmail.com>, 2021
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2014-08-20 08:54+0100\n"
-"Last-Translator: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language-Team: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-02-03 22:59+0000\n"
+"Last-Translator: Bryan Kearney <bryan.kearney@gmail.com>, 2021\n"
+"Language-Team: Chinese (Taiwan) (https://www.transifex.com/foreman/teams/114/z"
+"h_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Action"
-msgstr ""
+msgstr "動作"
 
 msgid "Action with sub plans"
-msgstr ""
+msgstr "有子計畫的動作"
 
 msgid "Add Trend Counter"
-msgstr ""
+msgstr "新增趨勢計數器"
 
 msgid "Architecture Distribution"
-msgstr ""
+msgstr "架構發佈"
 
 msgid "Average Memory Usage"
 msgstr ""
@@ -34,16 +41,16 @@ msgid "Average Swap Usage"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 msgid "Class Distribution"
-msgstr ""
+msgstr "類別發佈"
 
 msgid "Compute Resource Distribution"
 msgstr ""
 
 msgid "Compute resource"
-msgstr ""
+msgstr "運算設定檔"
 
 msgid "Create Trend"
 msgstr ""
@@ -55,58 +62,58 @@ msgid "Delete a trend counter"
 msgstr ""
 
 msgid "Delete all the trend history for %s?"
-msgstr ""
+msgstr "是否要刪除 %s 的所有趨勢記錄？"
 
 msgid "Display Name"
-msgstr ""
+msgstr "顯示名稱"
 
 msgid "Edit"
-msgstr ""
+msgstr "編輯"
 
 msgid "Edit Trend %s"
-msgstr ""
+msgstr "編輯趨勢 %s"
 
 msgid "Environment"
-msgstr ""
+msgstr "環境"
 
 msgid "Environment Distribution"
 msgstr ""
 
 msgid "Expand the chart"
-msgstr ""
+msgstr "展開圖表"
 
 msgid "Fact Name"
-msgstr ""
+msgstr "詳情名稱"
 
 msgid "Facts"
-msgstr ""
+msgstr "詳情"
 
 msgid "Get statistics"
-msgstr ""
+msgstr "取得數據"
 
 msgid "Hardware"
-msgstr ""
+msgstr "硬體"
 
 msgid "Host Group Distribution"
 msgstr ""
 
 msgid "Host group"
-msgstr ""
+msgstr "主機群組"
 
 msgid "Hosts"
-msgstr ""
+msgstr "主機"
 
 msgid "Import Puppet classes"
-msgstr ""
+msgstr "匯入 Puppet 類別"
 
 msgid "Import facts"
-msgstr ""
+msgstr "匯入詳情"
 
 msgid "Last update:"
 msgstr ""
 
 msgid "Learn more about this in the documentation."
-msgstr ""
+msgstr "欲知更多，請參閱文件。"
 
 msgid "List of trends counters"
 msgstr ""
@@ -115,16 +122,16 @@ msgid "Location Distribution"
 msgstr ""
 
 msgid "Max days for Trends graphs"
-msgstr ""
+msgstr "趨勢圖表的最大天數"
 
 msgid "Max trends"
-msgstr ""
+msgstr "最大趨勢"
 
 msgid "Model"
-msgstr ""
+msgstr "型號"
 
 msgid "Name"
-msgstr ""
+msgstr "名稱"
 
 msgid "No Charts To Load"
 msgstr ""
@@ -133,61 +140,61 @@ msgid "No data available"
 msgstr ""
 
 msgid "No data for this trend."
-msgstr ""
+msgstr "此趨勢無資料。"
 
 msgid "Number of CPUs"
-msgstr ""
+msgstr "CPU 數量"
 
 msgid "Number of Hosts"
-msgstr ""
+msgstr "主機數量"
 
 msgid "Operating system"
-msgstr ""
+msgstr "作業系統"
 
 msgid "Organization Distribution"
 msgstr ""
 
 msgid "Please Select"
-msgstr ""
+msgstr "請選擇"
 
 msgid "Remote action:"
-msgstr ""
+msgstr "遠端動作："
 
 msgid "Show Host"
-msgstr ""
+msgstr "顯示主機"
 
 msgid "Show Trends"
-msgstr ""
+msgstr "顯示趨勢"
 
 msgid "Show a trend"
 msgstr ""
 
 msgid "Statistics"
-msgstr ""
+msgstr "數據"
 
 msgid "Statistics and Trends for Foreman gives users overview of their infrastructure."
 msgstr ""
 
 msgid "Submit"
-msgstr ""
+msgstr "提交"
 
 msgid "Trend Counter Job"
 msgstr ""
 
 msgid "Trend of the last %s days."
-msgstr ""
+msgstr "最後 %s 天的趨勢。"
 
 msgid "Trends"
-msgstr ""
+msgstr "趨勢"
 
 msgid "Trends for %s"
-msgstr ""
+msgstr "%s 的趨勢"
 
 msgid "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts."
 msgstr ""
 
 msgid "free memory"
-msgstr ""
+msgstr "可用記憶體"
 
 msgid "last %s day"
 msgid_plural "last %s days"
@@ -195,4 +202,4 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "used memory"
-msgstr ""
+msgstr "已使用的記憶體"

@@ -1,25 +1,31 @@
-# foreman_statistics
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_statistics package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# This file is distributed under the same license as foreman_statistics.
+# Translators:
+# 0868a4d1af5275b3f70b0a6dac4c99a4, 2021
+# Andi Chandler <andi@gowling.com>, 2021
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2014-08-20 08:54+0100\n"
-"Last-Translator: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language-Team: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-02-03 22:59+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2021\n"
+"Language-Team: English (United Kingdom) (https://www.transifex.com/foreman/tea"
+"ms/114/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Action"
 msgstr ""
 
 msgid "Action with sub plans"
-msgstr ""
+msgstr "Action with sub plans"
 
 msgid "Add Trend Counter"
 msgstr ""
@@ -34,7 +40,7 @@ msgid "Average Swap Usage"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 msgid "Class Distribution"
 msgstr ""
@@ -43,7 +49,7 @@ msgid "Compute Resource Distribution"
 msgstr ""
 
 msgid "Compute resource"
-msgstr ""
+msgstr "Compute resource"
 
 msgid "Create Trend"
 msgstr ""
@@ -85,28 +91,28 @@ msgid "Get statistics"
 msgstr ""
 
 msgid "Hardware"
-msgstr ""
+msgstr "Hardware"
 
 msgid "Host Group Distribution"
 msgstr ""
 
 msgid "Host group"
-msgstr ""
+msgstr "Host group"
 
 msgid "Hosts"
-msgstr ""
+msgstr "Hosts"
 
 msgid "Import Puppet classes"
-msgstr ""
+msgstr "Import Puppet classes"
 
 msgid "Import facts"
-msgstr ""
+msgstr "Import facts"
 
 msgid "Last update:"
 msgstr ""
 
 msgid "Learn more about this in the documentation."
-msgstr ""
+msgstr "Learn more about this in the documentation."
 
 msgid "List of trends counters"
 msgstr ""
@@ -121,10 +127,10 @@ msgid "Max trends"
 msgstr ""
 
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "No Charts To Load"
 msgstr ""
@@ -142,16 +148,16 @@ msgid "Number of Hosts"
 msgstr ""
 
 msgid "Operating system"
-msgstr ""
+msgstr "Operating system"
 
 msgid "Organization Distribution"
-msgstr ""
+msgstr "Organisation Distribution"
 
 msgid "Please Select"
 msgstr ""
 
 msgid "Remote action:"
-msgstr ""
+msgstr "Remote action:"
 
 msgid "Show Host"
 msgstr ""
@@ -169,7 +175,7 @@ msgid "Statistics and Trends for Foreman gives users overview of their infrastru
 msgstr ""
 
 msgid "Submit"
-msgstr ""
+msgstr "Submit"
 
 msgid "Trend Counter Job"
 msgstr ""

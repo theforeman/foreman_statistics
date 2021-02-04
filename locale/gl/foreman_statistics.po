@@ -1,31 +1,35 @@
-# foreman_statistics
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_statistics package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# This file is distributed under the same license as foreman_statistics.
+# Translators:
+# Carmela Rubiños <carmela.rubinos@gmail.com>, 2021
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2014-08-20 08:54+0100\n"
-"Last-Translator: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language-Team: Foreman Team <foreman-dev@googlegroups.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-02-03 22:59+0000\n"
+"Last-Translator: Carmela Rubiños <carmela.rubinos@gmail.com>, 2021\n"
+"Language-Team: Galician (https://www.transifex.com/foreman/teams/114/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Action"
-msgstr ""
+msgstr "Acción"
 
 msgid "Action with sub plans"
 msgstr ""
 
 msgid "Add Trend Counter"
-msgstr ""
+msgstr "Engadir Contador de Tendencia"
 
 msgid "Architecture Distribution"
-msgstr ""
+msgstr "Distribución de Arquitectura"
 
 msgid "Average Memory Usage"
 msgstr ""
@@ -34,16 +38,16 @@ msgid "Average Swap Usage"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 msgid "Class Distribution"
-msgstr ""
+msgstr "Distribución de Clases"
 
 msgid "Compute Resource Distribution"
 msgstr ""
 
 msgid "Compute resource"
-msgstr ""
+msgstr "Recurso de computación"
 
 msgid "Create Trend"
 msgstr ""
@@ -55,46 +59,46 @@ msgid "Delete a trend counter"
 msgstr ""
 
 msgid "Delete all the trend history for %s?"
-msgstr ""
+msgstr "¿Eliminar todo ou historial de tendencias para %s?"
 
 msgid "Display Name"
-msgstr ""
+msgstr "Nome para mostrar"
 
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 msgid "Edit Trend %s"
-msgstr ""
+msgstr "Editar Tendencia %s"
 
 msgid "Environment"
-msgstr ""
+msgstr "Entorno"
 
 msgid "Environment Distribution"
 msgstr ""
 
 msgid "Expand the chart"
-msgstr ""
+msgstr "Expandir a gráfica"
 
 msgid "Fact Name"
-msgstr ""
+msgstr "Nome de Dato"
 
 msgid "Facts"
-msgstr ""
+msgstr "Datos"
 
 msgid "Get statistics"
 msgstr ""
 
 msgid "Hardware"
-msgstr ""
+msgstr "Hardware"
 
 msgid "Host Group Distribution"
 msgstr ""
 
 msgid "Host group"
-msgstr ""
+msgstr "Grupo de Equipos"
 
 msgid "Hosts"
-msgstr ""
+msgstr "Equipos"
 
 msgid "Import Puppet classes"
 msgstr ""
@@ -115,16 +119,16 @@ msgid "Location Distribution"
 msgstr ""
 
 msgid "Max days for Trends graphs"
-msgstr ""
+msgstr "Número de días máximo para os gráficos de tendencia"
 
 msgid "Max trends"
 msgstr ""
 
 msgid "Model"
-msgstr ""
+msgstr "Modelo"
 
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgid "No Charts To Load"
 msgstr ""
@@ -136,52 +140,52 @@ msgid "No data for this trend."
 msgstr ""
 
 msgid "Number of CPUs"
-msgstr ""
+msgstr "Número de CPUs"
 
 msgid "Number of Hosts"
-msgstr ""
+msgstr "Número de Equipos"
 
 msgid "Operating system"
-msgstr ""
+msgstr "Sistema Operativo"
 
 msgid "Organization Distribution"
 msgstr ""
 
 msgid "Please Select"
-msgstr ""
+msgstr "Seleccione, por favor"
 
 msgid "Remote action:"
 msgstr ""
 
 msgid "Show Host"
-msgstr ""
+msgstr "Mostrar Equipo"
 
 msgid "Show Trends"
-msgstr ""
+msgstr "Mostrar Tendencias"
 
 msgid "Show a trend"
 msgstr ""
 
 msgid "Statistics"
-msgstr ""
+msgstr "Estadísticas"
 
 msgid "Statistics and Trends for Foreman gives users overview of their infrastructure."
 msgstr ""
 
 msgid "Submit"
-msgstr ""
+msgstr "Introducir"
 
 msgid "Trend Counter Job"
 msgstr ""
 
 msgid "Trend of the last %s days."
-msgstr ""
+msgstr "Tendencia dos últimos %s días"
 
 msgid "Trends"
-msgstr ""
+msgstr "Tendencias"
 
 msgid "Trends for %s"
-msgstr ""
+msgstr "Tendencias para %s"
 
 msgid "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts."
 msgstr ""
