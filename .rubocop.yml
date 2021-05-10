@@ -6,10 +6,12 @@ require:
   - rubocop-minitest
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.7
   TargetRailsVersion: 6.0
   Exclude:
+    - 'locale/**/*'
     - 'node_modules/**/*'
+    - 'vendor/bundle/**/*'
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation

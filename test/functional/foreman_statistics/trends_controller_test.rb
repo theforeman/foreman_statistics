@@ -50,12 +50,6 @@ module ForemanStatistics
           assert_equal entries_per_page, per_page_results
         end
 
-        test 'should render per page dropdown with correct values' do
-          get :index, params: { per_page: entries_per_page + 1 }, session: set_session_user
-          assert_response :success
-          assert_not_nil response.body['perPageOptions&quot;:[5,6,10,15,25,50]']
-        end
-
         test 'sort links should include per page param' do
           get :index, params: { per_page: entries_per_page + 1 }, session: set_session_user
           assert_response :success
