@@ -39,11 +39,7 @@ module ForemanStatistics
     def trend_chart_data(trend, from = Setting[:max_trend])
       data = {}
       names = {}
-      paths = {}
-      trend.values.preload(:trendable).each do |value|
-        names[value.id] = CGI.escapeHTML(value.to_label)
-        paths[value.id] = trend_path(id: value)
-      end
+      trend.values.preload(:trendable).each { |value| names[value.id] = CGI.escapeHTML(value.to_label) }
       trend.values.preload(:trend_counters).joins(:trend_counters)
            .where(['trend_counters.interval_end > ? or trend_counters.interval_end is null', from])
            .reorder('trend_counters.interval_start')
