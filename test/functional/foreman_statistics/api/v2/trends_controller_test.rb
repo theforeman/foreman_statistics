@@ -9,7 +9,7 @@ class ForemanStatistics::Api::V2::TrendsControllerTest < ActionController::TestC
   end
 
   let(:host) { FactoryBot.create(:host) }
-  let(:foreman_trend) { FactoryBot.create(:foreman_statistics_foreman_trend, :trendable_type => 'Environment', :fact_name => 'fact') }
+  let(:foreman_trend) { FactoryBot.create(:foreman_statistics_foreman_trend, :trendable_type => 'Operatingsystem', :fact_name => 'fact') }
   let(:fact_trend) { FactoryBot.create(:foreman_statistics_fact_trend, :trendable_type => 'FactName') }
   let(:os_fact) do
     FactoryBot.create(:fact_value, :value => 'fedora', :host => host,

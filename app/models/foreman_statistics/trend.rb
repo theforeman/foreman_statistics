@@ -25,7 +25,9 @@ module ForemanStatistics
     end
 
     def self.build_trend(trend_params = {})
-      trend_params[:trendable_type] == 'FactName' ? FactTrend.new(trend_params) : ForemanTrend.new(trend_params)
+      params = trend_params.dup
+      params[:trendable_type] = 'ForemanPuppet::Environment' if params[:trendable_type] == 'Environment'
+      params[:trendable_type] == 'FactName' ? FactTrend.new(params) : ForemanTrend.new(params)
     end
 
     private

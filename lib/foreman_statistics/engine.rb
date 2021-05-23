@@ -87,11 +87,12 @@ module ForemanStatistics
 
     # Include concerns in this config.to_prepare block
     config.to_prepare do
-      ::ComputeResource.include ForemanStatistics::ComputeResourceDecorations
-      ::Environment.include ForemanStatistics::EnvironmentDecorations
-      ::Hostgroup.include ForemanStatistics::HostgroupDecorations
-      ::Model.include ForemanStatistics::ModelDecorations
-      ::Operatingsystem.include ForemanStatistics::OperatingsystemDecorations
+      ::ComputeResource.include ForemanStatistics::HasManyTrends
+      ::Hostgroup.include ForemanStatistics::HasManyTrends
+      ::Model.include ForemanStatistics::HasManyTrends
+      ::Operatingsystem.include ForemanStatistics::HasManyTrends
+      '::Environment'.safe_constantize&.include ForemanStatistics::HasManyTrends
+      'ForemanPuppet::Environment'.safe_constantize&.include ForemanStatistics::HasManyTrends
       ::Setting.include ForemanStatistics::SettingDecorations
       ::Setting::General.prepend ForemanStatistics::GeneralSettingDecorations
       begin
