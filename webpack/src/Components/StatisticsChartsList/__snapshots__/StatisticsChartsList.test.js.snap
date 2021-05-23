@@ -19,6 +19,9 @@ exports[`StatisticsChartsList rendering should render two panels for fixtures da
         "url": "statistics/operatingsystem",
       }
     }
+    className=""
+    config="regular"
+    errorText=""
     key="operatingsystem"
     noDataMsg="No data available"
     tip="Expand the chart"
@@ -33,6 +36,9 @@ exports[`StatisticsChartsList rendering should render two panels for fixtures da
         "url": "statistics/architecture",
       }
     }
+    className=""
+    config="regular"
+    errorText=""
     key="architecture"
     noDataMsg="No data available"
     tip="Expand the chart"
