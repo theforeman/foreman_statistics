@@ -2,8 +2,18 @@
 
 exports[`StatisticsPage rendering render with props 1`] = `
 <PageLayout
+  beforeToolbarComponent={null}
+  breadcrumbOptions={null}
+  customBreadcrumbs={null}
   header="Statistics"
+  isLoading={false}
+  onBookmarkClick={[Function]}
+  onSearch={[Function]}
+  searchProps={Object {}}
+  searchQuery=""
   searchable={false}
+  toastNotifications={Array []}
+  toolbarButtons={null}
 >
   <Component
     getStatisticsMeta={[Function]}
