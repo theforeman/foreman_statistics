@@ -3,9 +3,11 @@ module ForemanStatistics
     include ::CommonParametersHelper
 
     def trendable_types
-      options = { _('Environment') => 'Environment', _('Operating system') => 'Operatingsystem',
-                  _('Model') => 'Model', _('Facts') => 'FactName', _('Host group') => 'Hostgroup', _('Compute resource') => 'ComputeResource' }
       existing = ForemanTrend.types.pluck(:trendable_type)
+      options = {}
+      options = { _('Environment') => 'ForemanPuppet::Environment' } if Foreman::Plugin.find(:foreman_puppet)
+      options.merge!({ _('Operating system') => 'Operatingsystem', _('Model') => 'Model', _('Facts') => 'FactName',
+                       _('Host group') => 'Hostgroup', _('Compute resource') => 'ComputeResource' })
       options.delete_if { |_k, v| existing.include?(v) }
     end
 
