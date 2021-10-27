@@ -19,7 +19,7 @@ module ForemanStatistics
 
     initializer 'foreman_statistics.register_plugin', :before => :finisher_hook do |_app|
       Foreman::Plugin.register :foreman_statistics do
-        requires_foreman '>= 2.1.0'
+        requires_foreman '>= 3.1.0'
 
         # ==== Core cleanups
         # TODO: clean up when this gets removed from core
@@ -70,6 +70,17 @@ module ForemanStatistics
           :engine => ForemanStatistics::Engine, :parent => :monitor_menu, :after => :trends,
           :url_hash => { :controller => 'foreman_statistics/statistics', :action => :index }
         }
+
+        settings do
+          category(:general) do
+            setting('max_trend',
+              type: :integer,
+              default: 30,
+              description: N_('Max days for Trends graphs'),
+              full_name: N_('Max trends'),
+              validate: { numericality: { greater_than: 0 } })
+          end
+        end
       end
     end
 
@@ -92,13 +103,6 @@ module ForemanStatistics
       ::Model.include ForemanStatistics::HasManyTrends
       ::Operatingsystem.include ForemanStatistics::HasManyTrends
       'ForemanPuppet::Environment'.safe_constantize&.include ForemanStatistics::HasManyTrends
-      ::Setting.include ForemanStatistics::SettingDecorations
-      ::Setting::General.prepend ForemanStatistics::GeneralSettingDecorations
-      begin
-        ::Setting::General.load_defaults
-      rescue ActiveRecord::NoDatabaseError => e
-        Rails.logger.warn e
-      end
     end
 
     rake_tasks do
