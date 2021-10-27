@@ -4,7 +4,6 @@ module ForemanStatistics
   class TrendsControllerTest < ActionController::TestCase
     setup do
       @routes = ForemanStatistics::Engine.routes
-      Setting::General.create(:name => 'max_trend', :default => 30, :description => 'Max days for Trends graphs')
     end
 
     let(:os_trend) { FactoryBot.create(:foreman_statistics_trend_os) }

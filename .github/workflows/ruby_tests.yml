@@ -32,8 +32,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        foreman-core-branch: [3.0-stable, develop]
         puppet: [false]
+        foreman-core-branch: [develop]
         ruby-version: [2.7]
         node-version: [14]
         include:
