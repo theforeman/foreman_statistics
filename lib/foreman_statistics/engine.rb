@@ -91,7 +91,6 @@ module ForemanStatistics
       ::Hostgroup.include ForemanStatistics::HasManyTrends
       ::Model.include ForemanStatistics::HasManyTrends
       ::Operatingsystem.include ForemanStatistics::HasManyTrends
-      '::Environment'.safe_constantize&.include ForemanStatistics::HasManyTrends
       'ForemanPuppet::Environment'.safe_constantize&.include ForemanStatistics::HasManyTrends
       ::Setting.include ForemanStatistics::SettingDecorations
       ::Setting::General.prepend ForemanStatistics::GeneralSettingDecorations
