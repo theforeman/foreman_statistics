@@ -55,14 +55,18 @@ module ForemanStatistics
       assert_kind_of Array, stat.calculate
     end
 
-    test 'it should fail to calculate a puppet class counter statistics object without an id' do
-      assert_raise(ArgumentError) { Statistics::CountPuppetClasses.new }
-    end
+    context 'with puppet plugin' do
+      test 'it should fail to calculate a puppet class counter statistics object without an id' do
+        skip('no puppet plugin') unless Foreman::Plugin.find(:foreman_puppet)
+        assert_raise(ArgumentError) { Statistics::CountPuppetClasses.new }
+      end
 
-    test 'it should initialize a puppet class counter statistics object' do
-      stat = Statistics::CountPuppetClasses.new(:id => :classes)
-      assert_equal '/foreman_statistics/statistics/classes', stat.url
-      assert_kind_of Array, stat.calculate
+      test 'it should initialize a puppet class counter statistics object' do
+        skip('no puppet plugin') unless Foreman::Plugin.find(:foreman_puppet)
+        stat = Statistics::CountPuppetClasses.new(:id => :classes)
+        assert_equal '/foreman_statistics/statistics/classes', stat.url
+        assert_kind_of Array, stat.calculate
+      end
     end
 
     test 'it should fail to calculate a Fact class counter statistics object without count_by' do

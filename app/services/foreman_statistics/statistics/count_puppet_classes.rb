@@ -9,7 +9,7 @@ module ForemanStatistics
       end
 
       def calculate
-        Puppetclass.authorized(:view_puppetclasses).map do |pc|
+        ForemanPuppet::Puppetclass.authorized(:view_puppetclasses).map do |pc|
           count = pc.hosts_count
           next if count.zero?
           {

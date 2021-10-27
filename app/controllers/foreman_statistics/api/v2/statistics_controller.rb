@@ -13,8 +13,10 @@ module ForemanStatistics
         def index
           @os_count    = Host.authorized(:view_hosts).count_distribution :operatingsystem
           @arch_count  = Host.authorized(:view_hosts).count_distribution :architecture
-          @env_count   = Host.authorized(:view_hosts).count_distribution :environment
-          @klass_count = Host.authorized(:view_hosts).count_habtm 'puppetclass'
+          if defined?(ForemanPuppet)
+            @env_count   = Host.authorized(:view_hosts).count_distribution :environment
+            @klass_count = Host.authorized(:view_hosts).count_habtm 'puppetclass'
+          end
           @cpu_count   = FactValue.authorized(:view_facts).my_facts.count_each 'processorcount'
           @model_count = FactValue.authorized(:view_facts).my_facts.count_each 'manufacturer'
           @mem_size    = FactValue.authorized(:view_facts).my_facts.mem_average 'memorysize'
