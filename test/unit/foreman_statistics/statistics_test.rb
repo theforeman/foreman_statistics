@@ -50,9 +50,19 @@ module ForemanStatistics
       assert_kind_of Array, stat.calculate
     end
 
-    test 'it should initialize a host counter statistics object' do
-      stat = Statistics::CountHosts.new(:count_by => :compute_resource)
-      assert_kind_of Array, stat.calculate
+    describe 'CountHosts' do
+      test 'initializes a host counter statistics object' do
+        stat = Statistics::CountHosts.new(:count_by => :compute_resource)
+        assert_kind_of Array, stat.calculate
+      end
+
+      test 'calculates stats by given metric' do
+        host = FactoryBot.create(:host, :with_operatingsystem)
+        stat = Statistics::CountHosts.new(count_by: :operatingsystem, title: 'OS Distribution').calculate
+        _(stat).must_be_instance_of(Array)
+        _(stat.first[:data]).must_equal(1)
+        _(stat.first[:label]).must_equal(host.operatingsystem.to_label)
+      end
     end
 
     context 'with puppet plugin' do

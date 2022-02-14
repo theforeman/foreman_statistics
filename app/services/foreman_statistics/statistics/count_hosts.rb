@@ -20,11 +20,12 @@ module ForemanStatistics
 
         output = []
         data = scope.reorder('').group(grouping).count
-        associations = klass.find_by(id: data.keys)
+        associations = klass.where(id: data.keys).to_a
         data.each do |k, v|
           output << { label: associations.detect { |a| a.id == k }.to_label, data: v } unless v.zero?
-        rescue StandardError
-          logger.info "skipped #{k} as it has has no label"
+        rescue StandardError => e
+          Rails.logger.info "skipped '#{association} - #{k}' as it has has no label"
+          Rails.logger.debug e
         end
         output
       end
