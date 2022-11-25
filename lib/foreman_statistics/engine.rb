@@ -19,12 +19,6 @@ module ForemanStatistics
       Foreman::Plugin.register :foreman_statistics do
         requires_foreman '>= 3.1.0'
 
-        # ==== Core cleanups
-        # TODO: clean up when this gets removed from core
-        delete_menu_item :top_menu, :trends
-        delete_menu_item :top_menu, :statistics
-        # ====
-
         # Add Global JS file for extending foreman-core components and routes
         register_global_js_file 'fills'
 
