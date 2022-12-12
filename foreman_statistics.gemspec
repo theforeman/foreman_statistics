@@ -14,5 +14,6 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib,locale,webpack}/**/*'] + ['LICENSE', 'Rakefile', 'README.md', 'package.json']
   s.test_files = Dir['test/**/*']
 
+  s.add_development_dependency 'rake'
   s.add_development_dependency 'rdoc'
 end
