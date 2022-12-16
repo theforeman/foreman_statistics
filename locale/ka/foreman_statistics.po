@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_statistics package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: foreman_statistics 2.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2021-02-03 22:59+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022\n"
+"Language-Team: Georgian (https://www.transifex.com/foreman/teams/114/ka/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ka\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Action"
+msgstr "მოქმედება"
+
+msgid "Action with sub plans"
+msgstr "ქმედება ქვე-გეგმებით"
+
+msgid "Add Trend Counter"
+msgstr "ტრენდის მთვლელის დამატება"
+
+msgid "Architecture Distribution"
+msgstr "არქიტექტურის განაწილება"
+
+msgid "Average Memory Usage"
+msgstr "მეხსიერების საშუალო დატვირთვა"
+
+msgid "Average Swap Usage"
+msgstr "სვაპის საშუალ დატვირთვა"
+
+msgid "Cancel"
+msgstr "გაუქმება"
+
+msgid "Class Distribution"
+msgstr "კლასის გადანაწილება"
+
+msgid "Compute Resource Distribution"
+msgstr "გამოთვლითი რესურსის განაწილება"
+
+msgid "Compute resource"
+msgstr "გამოთვლითი რესურსი"
+
+msgid "Create Trend"
+msgstr "ტრენდის შექმნა"
+
+msgid "Create a trend counter"
+msgstr "ტრენდის მთვლელის შექმნა"
+
+msgid "Delete a trend counter"
+msgstr "ტრენდის მთვლელის წაშლა"
+
+msgid "Delete all the trend history for %s?"
+msgstr "წავშალო ტრენის ისტორია %s-სთვის?"
+
+msgid "Display Name"
+msgstr "საჩვენებელი სახელი"
+
+msgid "Edit"
+msgstr "ჩასწორება"
+
+msgid "Edit Trend %s"
+msgstr "ტრენდის ჩასწორება: %s"
+
+msgid "Environment"
+msgstr "გარემო"
+
+msgid "Environment Distribution"
+msgstr "გარემოს განაწილება"
+
+msgid "Expand the chart"
+msgstr "გრაფიკის გაფართოება"
+
+msgid "Fact Name"
+msgstr "ფაქტის სახელი"
+
+msgid "Facts"
+msgstr "ფაქტები"
+
+msgid "Get statistics"
+msgstr "სტატისტიკის მიღება"
+
+msgid "Hardware"
+msgstr "აპარატურა"
+
+msgid "Host Group Distribution"
+msgstr "ჰოსტების ჯგუფის განაწილება"
+
+msgid "Host group"
+msgstr "ჰოსტების ჯგუფი"
+
+msgid "Hosts"
+msgstr "ჰოსტები"
+
+msgid "Import Puppet classes"
+msgstr "Puppet-ის კლასების შემოტანა"
+
+msgid "Import facts"
+msgstr "ფაქტების შემოტანა"
+
+msgid "Last update:"
+msgstr "უკანასკნელი განახლება:"
+
+msgid "Learn more about this in the documentation."
+msgstr "შეიტყვეთ მეტი ამის შესახებ დოკუმენტაციაში."
+
+msgid "List of trends counters"
+msgstr "ტრენდის მთვლელების სია"
+
+msgid "Location Distribution"
+msgstr "მდებარეობის გადანაწილება"
+
+msgid "Max days for Trends graphs"
+msgstr "ტრენდის გრაფიკების დღეების მაქსიმალური რაოდენობა"
+
+msgid "Max trends"
+msgstr "ტრენდების მაქსიმალური რაოდენობა"
+
+msgid "Model"
+msgstr "მოდელი"
+
+msgid "Name"
+msgstr "სახელი"
+
+msgid "No Charts To Load"
+msgstr "ჩასატვირთი გრაფიკებს გარეშე"
+
+msgid "No data available"
+msgstr "მონაცემები მიუწვდომელია"
+
+msgid "No data for this trend."
+msgstr "ტრენდისთვის მონაცემები არ არსებობს."
+
+msgid "Number of CPUs"
+msgstr "CPU-ების რიცხვი"
+
+msgid "Number of Hosts"
+msgstr "ჰოსტების რიცხვი"
+
+msgid "Operating system"
+msgstr "ოპერაციული სისტემა"
+
+msgid "Organization Distribution"
+msgstr "ორგანიზაციის გადანაწილება"
+
+msgid "Please Select"
+msgstr "გთხოვთ აირჩიოთ"
+
+msgid "Remote action:"
+msgstr "დაშორებული ქმედება:"
+
+msgid "Show Host"
+msgstr "ჰოსტის ჩვენება"
+
+msgid "Show Trends"
+msgstr "ტრენდების ჩვენება"
+
+msgid "Show a trend"
+msgstr "ტრენდის ჩვენება"
+
+msgid "Statistics"
+msgstr "სტატისტიკა"
+
+msgid "Statistics and Trends for Foreman gives users overview of their infrastructure."
+msgstr "Foreman-ის სტატისტიკა და ტენდენციები მომხმარებლებს აძლევს მათი ინფრასტრუქტურის შესახებ მიმოხილვის ნახვის საშუალებას."
+
+msgid "Submit"
+msgstr "გაგზავნა"
+
+msgid "Trend Counter Job"
+msgstr "ტრენდის მთვლელის დავალება"
+
+msgid "Trend of the last %s days."
+msgstr "ბოლო %s დღის ტრენდი."
+
+msgid "Trends"
+msgstr "ტრენდები"
+
+msgid "Trends for %s"
+msgstr "ტრენდები %s-თვის"
+
+msgid "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts."
+msgstr "Foreman-ის ტენდენციები საშუალებას გაძლევთ თვალყური ადევნოთ ცვლილებებს თქვენს ინფრასტრუქტურაში დროთა განმავლობაში. ის საშუალებას გაძლევთ თვალყური ადევნოთ როგორც Foreman-თან დაკავშირებულ ინფორმაციას, ასევე ნებისმიერ ფაქტს. ტრენდების გვერდებზე მოცემულია გრაფიკი, თუ როგორ შეიცვალა ამ მნიშვნელობის მქონე ჰოსტების რაოდენობა დროთა განმავლობაში და ჩამოთვლილია მიმდინარე ჰოსტები."
+
+msgid "free memory"
+msgstr "თავისუფალი მეხსიერება"
+
+msgid "last %s day"
+msgid_plural "last %s days"
+msgstr[0] "ბოლო %s დღე"
+msgstr[1] "ბოლო %s დღე"
+
+msgid "used memory"
+msgstr "გამოყენებული მეხსიერება"

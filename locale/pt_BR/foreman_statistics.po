@@ -9,21 +9,23 @@
 # Felipe Nogaroto Gonzalez <felipeng84@gmail.com>, 2021
 # Bryan Kearney <bryan.kearney@gmail.com>, 2021
 # Luiz Henrique Vasconcelos <luizvasconceloss@yahoo.com.br>, 2021
-# Amit Upadhye <aupadhye@redhat.com>, 2021
+# Amit Upadhye <aupadhye@redhat.com>, 2022
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_statistics 1.1.1\n"
+"Project-Id-Version: foreman_statistics 2.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-03 22:59+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2021\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/foreman/teams/11"
 "4/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 100000"
+"0 == 0 ? 1 : 2;\n"
 
 msgid "Action"
 msgstr "Ação"
@@ -65,7 +67,7 @@ msgid "Delete a trend counter"
 msgstr "Excluir um contador de tendências"
 
 msgid "Delete all the trend history for %s?"
-msgstr "Excluir todo o histórico de tendências de %s?"
+msgstr "Elimine todo o histórico de tendências para %s?"
 
 msgid "Display Name"
 msgstr "Nome para exibição"
@@ -74,7 +76,7 @@ msgid "Edit"
 msgstr "Editar"
 
 msgid "Edit Trend %s"
-msgstr "Editar tendência %s"
+msgstr "Editar Tendência %s"
 
 msgid "Environment"
 msgstr "Ambiente"
@@ -113,7 +115,7 @@ msgid "Import facts"
 msgstr "Importar fatos"
 
 msgid "Last update:"
-msgstr ""
+msgstr "Última atualização:"
 
 msgid "Learn more about this in the documentation."
 msgstr "Para saber mais sobre isto, acesse a documentação."
@@ -185,7 +187,7 @@ msgid "Trend Counter Job"
 msgstr ""
 
 msgid "Trend of the last %s days."
-msgstr "Tendências dos últimos %s dias."
+msgstr "Tendência dos últimos %s dias."
 
 msgid "Trends"
 msgstr "Tendências"

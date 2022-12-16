@@ -7,14 +7,15 @@
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2021
 # Transifex Bot <>, 2021
 # Bryan Kearney <bryan.kearney@gmail.com>, 2021
-# Amit Upadhye <aupadhye@redhat.com>, 2021
+# Amit Upadhye <aupadhye@redhat.com>, 2022
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_statistics 1.1.1\n"
+"Project-Id-Version: foreman_statistics 2.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-03 22:59+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2021\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/foreman/teams/114/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,10 +45,10 @@ msgid "Cancel"
 msgstr "取り消し"
 
 msgid "Class Distribution"
-msgstr "クラス分布"
+msgstr "クラスの分布"
 
 msgid "Compute Resource Distribution"
-msgstr "コンピュートリソースディストリビューション"
+msgstr "コンピュートリソースの分布"
 
 msgid "Compute resource"
 msgstr "コンピュートリソース"
@@ -71,13 +72,13 @@ msgid "Edit"
 msgstr "編集"
 
 msgid "Edit Trend %s"
-msgstr "%sトレンド  の編集"
+msgstr "トレンド %s の編集"
 
 msgid "Environment"
 msgstr "環境"
 
 msgid "Environment Distribution"
-msgstr "環境ディストリビューション"
+msgstr "環境の分布"
 
 msgid "Expand the chart"
 msgstr "チャートを拡大"
@@ -95,7 +96,7 @@ msgid "Hardware"
 msgstr "ハードウェア"
 
 msgid "Host Group Distribution"
-msgstr "ホストグループディストリビューション"
+msgstr "ホストグループの分布"
 
 msgid "Host group"
 msgstr "ホストグループ"
@@ -119,7 +120,7 @@ msgid "List of trends counters"
 msgstr "トレンドカウンターのリスト"
 
 msgid "Location Distribution"
-msgstr "場所ディストリビューション"
+msgstr "ロケーションの分布"
 
 msgid "Max days for Trends graphs"
 msgstr "トレンドグラフの最大日数"
@@ -152,7 +153,7 @@ msgid "Operating system"
 msgstr "オペレーティングシステム"
 
 msgid "Organization Distribution"
-msgstr "組織ディストリビューション"
+msgstr "組織の分布"
 
 msgid "Please Select"
 msgstr "選択してください"
@@ -173,13 +174,13 @@ msgid "Statistics"
 msgstr "統計"
 
 msgid "Statistics and Trends for Foreman gives users overview of their infrastructure."
-msgstr ""
+msgstr "Foreman の統計とトレンドは、ユーザーにインフラストラクチャーの概要を提供します。"
 
 msgid "Submit"
 msgstr "送信"
 
 msgid "Trend Counter Job"
-msgstr ""
+msgstr "トレンドカウンタージョブ"
 
 msgid "Trend of the last %s days."
 msgstr "過去 %s 日間のトレンドです。"
@@ -191,15 +192,14 @@ msgid "Trends for %s"
 msgstr "%s のトレンド"
 
 msgid "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts."
-msgstr "Foreman のトレンドを使用すると、インフラストラクチャー内における長期での変更を追跡できます。Foreman 関連の情報とファクトの両方が追跡できます。トレンドページでは、その値のホスト数が長期でどのように変化したかというグラフと、現行ホストの一覧が確認できます。"
+msgstr "Foreman のトレンドを使用すると、インフラストラクチャー内における長期での変更を追跡できます。Foreman 関連の情報とファクトの両方を追跡できます。トレンドページでは、その値のホスト数が長期でどのように変化したかというグラフと、現行ホストの一覧が確認できます。"
 
 msgid "free memory"
 msgstr "空きメモリー"
 
 msgid "last %s day"
 msgid_plural "last %s days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "最終 %s 日"
 
 msgid "used memory"
 msgstr "使用済みメモリー"
