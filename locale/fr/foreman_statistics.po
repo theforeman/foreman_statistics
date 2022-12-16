@@ -10,20 +10,22 @@
 # Hartmel . <hartmel@laposte.net>, 2021
 # Baptiste Agasse <baptiste.agasse@gmail.com>, 2021
 # Bryan Kearney <bryan.kearney@gmail.com>, 2021
-# Amit Upadhye <aupadhye@redhat.com>, 2021
+# Amit Upadhye <aupadhye@redhat.com>, 2022
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_statistics 1.1.1\n"
+"Project-Id-Version: foreman_statistics 2.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-03 22:59+0000\n"
-"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2021\n"
+"Last-Translator: Amit Upadhye <aupadhye@redhat.com>, 2022\n"
 "Language-Team: French (https://www.transifex.com/foreman/teams/114/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 100000"
+"0 == 0 ? 1 : 2;\n"
 
 msgid "Action"
 msgstr "Action"
@@ -65,10 +67,10 @@ msgid "Delete a trend counter"
 msgstr "Supprimer un compteur de tendance"
 
 msgid "Delete all the trend history for %s?"
-msgstr "Supprimer l'historique des tendances pour %s?"
+msgstr "Supprimer l'historique des tendances pour %s ?"
 
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d'affichage"
 
 msgid "Edit"
 msgstr "Modifier"
@@ -92,7 +94,7 @@ msgid "Facts"
 msgstr "Faits"
 
 msgid "Get statistics"
-msgstr "Voir les statistiques"
+msgstr "Obtenir des statistiques"
 
 msgid "Hardware"
 msgstr "Matériel"
@@ -113,7 +115,7 @@ msgid "Import facts"
 msgstr "Importer des faits"
 
 msgid "Last update:"
-msgstr "Dernière mise à jour:"
+msgstr "Dernière mise à jour :"
 
 msgid "Learn more about this in the documentation."
 msgstr "Approfondissez ce sujet dans la documentation."
@@ -176,13 +178,13 @@ msgid "Statistics"
 msgstr "Statistiques"
 
 msgid "Statistics and Trends for Foreman gives users overview of their infrastructure."
-msgstr ""
+msgstr "Les statistiques et les tendances pour Foreman donnent aux utilisateurs une vue d'ensemble de leur infrastructure."
 
 msgid "Submit"
 msgstr "Envoyer"
 
 msgid "Trend Counter Job"
-msgstr ""
+msgstr "emploi du compteur de tendance"
 
 msgid "Trend of the last %s days."
 msgstr "Tendances pour les %s derniers jours."
@@ -201,8 +203,9 @@ msgstr "mémoire libre"
 
 msgid "last %s day"
 msgid_plural "last %s days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s dernier jour"
+msgstr[1] "%s derniers jours"
+msgstr[2] "%s derniers jours"
 
 msgid "used memory"
 msgstr "mémoire utilisée"
