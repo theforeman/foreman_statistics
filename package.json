@@ -14,7 +14,6 @@
     "@theforeman/builder": "^8.4.1",
     "@theforeman/eslint-plugin-foreman": "^8.4.1",
     "@theforeman/find-foreman": "^8.4.1",
-    "@theforeman/stories": "^8.4.1",
     "@theforeman/test": "^8.4.1",
     "@theforeman/vendor-dev": "^8.4.1",
     "babel-eslint": "^10.0.3",
@@ -32,8 +31,6 @@
     "test:watch": "tfm-test --plugin --config config/jest.config.js --watchAll",
     "test:current": "tfm-test --plugin --config config/jest.config.js --watch",
     "publish-coverage": "tfm-publish-coverage",
-    "stories": "tfm-stories --plugin",
-    "stories:build": "tfm-build-stories --plugin",
     "create-react-component": "yo react-domain"
   },
   "repository": {
