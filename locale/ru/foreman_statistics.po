@@ -12,7 +12,6 @@
 # Bryan Kearney <bryan.kearney@gmail.com>, 2021
 # KotUchoniy <yosho1@yandex.ru>, 2021
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 2.0.1\n"

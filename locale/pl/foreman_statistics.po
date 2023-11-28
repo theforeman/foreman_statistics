@@ -7,7 +7,6 @@
 # sziolkow <sziolkow@gmail.com>, 2021
 # Michał Foryt <michal.foryt@gmail.com>, 2021
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 2.0.1\n"
