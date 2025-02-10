@@ -3,11 +3,11 @@
   "locale_data": {
     "foreman_statistics": {
       "": {
-        "Project-Id-Version": "foreman_statistics 2.0.1",
+        "Project-Id-Version": "foreman_statistics 2.1.0",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2021-02-03 22:59+0000",
         "Last-Translator": "Michał Foryt <michal.foryt@gmail.com>, 2021",
-        "Language-Team": "Polish (https://www.transifex.com/foreman/teams/114/pl/)",
+        "Language-Team": "Polish (https://app.transifex.com/foreman/teams/114/pl/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
         "Content-Transfer-Encoding": "8bit",
@@ -17,13 +17,41 @@
         "domain": "foreman_statistics",
         "plural_forms": "nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);"
       },
-      "Get statistics": [
-        "Uzyskaj statystyki"
-      ],
-      "List of trends counters": [
+      "%s core": [
+        "",
         ""
       ],
-      "Show a trend": [
+      "Action": [
+        "Akcja"
+      ],
+      "Action with sub plans": [
+        ""
+      ],
+      "Add Trend Counter": [
+        "Dodaj licznik trendów"
+      ],
+      "Architecture Distribution": [
+        "Dystrybucja architektury"
+      ],
+      "Average Memory Usage": [
+        ""
+      ],
+      "Average Swap Usage": [
+        ""
+      ],
+      "Cancel": [
+        "Anuluj"
+      ],
+      "Class Distribution": [
+        "Dystrybucja klasy"
+      ],
+      "Compute Resource Distribution": [
+        ""
+      ],
+      "Compute resource": [
+        "Zasób obliczeniowy"
+      ],
+      "Create Trend": [
         ""
       ],
       "Create a trend counter": [
@@ -32,28 +60,64 @@
       "Delete a trend counter": [
         ""
       ],
+      "Delete all the trend history for %s?": [
+        "Skasować całą historię trendów dla %s?"
+      ],
+      "Display Name": [
+        "Wyświetlana nazwa"
+      ],
+      "Edit": [
+        "Edytuj"
+      ],
+      "Edit Trend %s": [
+        "Edytuj trend %s"
+      ],
       "Environment": [
         "Środowisko"
       ],
-      "Operating system": [
-        "System operacyjny"
+      "Environment Distribution": [
+        ""
       ],
-      "Model": [
-        "Model"
+      "Expand the chart": [
+        "Rozwiń wykres"
+      ],
+      "Fact Name": [
+        "Nazwa faktu"
       ],
       "Facts": [
         "Fakty"
       ],
+      "Get statistics": [
+        "Uzyskaj statystyki"
+      ],
+      "Hardware": [
+        "Hardware"
+      ],
+      "Host Group Distribution": [
+        ""
+      ],
       "Host group": [
         "Grupa hostów"
       ],
-      "Compute resource": [
-        "Zasób obliczeniowy"
+      "Hosts": [
+        "Hosty"
       ],
-      "Trend of the last %s days.": [
-        "Trend ostatnich %s dni"
+      "Import Puppet classes": [
+        ""
       ],
-      "Trend Counter Job": [
+      "Import facts": [
+        ""
+      ],
+      "Last update:": [
+        ""
+      ],
+      "Learn more about this in the documentation.": [
+        "Dowiedz się więcej na ten temat w dokumentacji."
+      ],
+      "List of trends counters": [
+        ""
+      ],
+      "Location Distribution": [
         ""
       ],
       "Max days for Trends graphs": [
@@ -62,141 +126,81 @@
       "Max trends": [
         "Maksymalna ilość trendy"
       ],
-      "Architecture Distribution": [
-        "Dystrybucja architektury"
+      "Model": [
+        "Model"
       ],
-      "Environment Distribution": [
+      "Name": [
+        "Nazwa"
+      ],
+      "No Charts To Load": [
         ""
       ],
-      "Host Group Distribution": [
+      "No data available": [
         ""
       ],
-      "Compute Resource Distribution": [
-        ""
+      "No data for this trend.": [
+        "Brak danych dla tego trendu"
       ],
       "Number of CPUs": [
         "Liczba CPU"
       ],
-      "Hardware": [
-        "Hardware"
+      "Number of Hosts": [
+        "Liczba hostów"
       ],
-      "Average Memory Usage": [
-        ""
-      ],
-      "Average Swap Usage": [
-        ""
-      ],
-      "Class Distribution": [
-        "Dystrybucja klasy"
-      ],
-      "Location Distribution": [
-        ""
+      "Operating system": [
+        "System operacyjny"
       ],
       "Organization Distribution": [
+        ""
+      ],
+      "Please Select": [
+        "Proszę wybrać"
+      ],
+      "Remote action:": [
+        ""
+      ],
+      "Show Host": [
+        "Pokaż hosty"
+      ],
+      "Show Trends": [
+        "Pokaż trendy"
+      ],
+      "Show a trend": [
+        ""
+      ],
+      "Statistics": [
+        "Statystyki"
+      ],
+      "Statistics and Trends for Foreman gives users overview of their infrastructure.": [
+        ""
+      ],
+      "Submit": [
+        "Wyślij"
+      ],
+      "Trend Counter Job": [
+        ""
+      ],
+      "Trend of the last %s days.": [
+        "Trend ostatnich %s dni"
+      ],
+      "Trends": [
+        "Trendy"
+      ],
+      "Trends for %s": [
+        "Tendencje dla %s"
+      ],
+      "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts.": [
         ""
       ],
       "free memory": [
         "wolna pamięć"
       ],
-      "used memory": [
-        "używana pamięć"
-      ],
-      "Trends for %s": [
-        "Tendencje dla %s"
-      ],
-      "No data for this trend.": [
-        "Brak danych dla tego trendu"
-      ],
-      "Please Select": [
-        "Proszę wybrać"
-      ],
-      "Show Host": [
-        "Pokaż hosty"
-      ],
-      "Edit Trend %s": [
-        "Edytuj trend %s"
-      ],
-      "Fact Name": [
-        "Nazwa faktu"
-      ],
-      "Display Name": [
-        "Wyświetlana nazwa"
-      ],
-      "Cancel": [
-        "Anuluj"
-      ],
-      "Submit": [
-        "Wyślij"
-      ],
-      "Trends": [
-        "Trendy"
-      ],
-      "Add Trend Counter": [
-        "Dodaj licznik trendów"
-      ],
-      "Name": [
-        "Nazwa"
-      ],
-      "Action": [
-        "Akcja"
-      ],
-      "Show Trends": [
-        "Pokaż trendy"
-      ],
-      "Edit": [
-        "Edytuj"
-      ],
-      "Delete all the trend history for %s?": [
-        "Skasować całą historię trendów dla %s?"
-      ],
-      "Last update:": [
-        ""
-      ],
-      "Create Trend": [
-        ""
-      ],
       "last %s day": [
         "",
         ""
       ],
-      "Number of Hosts": [
-        "Liczba hostów"
-      ],
-      "Hosts": [
-        "Hosty"
-      ],
-      "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts.": [
-        ""
-      ],
-      "Learn more about this in the documentation.": [
-        "Dowiedz się więcej na ten temat w dokumentacji."
-      ],
-      "Statistics": [
-        "Statystyki"
-      ],
-      "No data available": [
-        ""
-      ],
-      "Expand the chart": [
-        "Rozwiń wykres"
-      ],
-      "No Charts To Load": [
-        ""
-      ],
-      "Action with sub plans": [
-        ""
-      ],
-      "Import facts": [
-        ""
-      ],
-      "Import Puppet classes": [
-        ""
-      ],
-      "Remote action:": [
-        ""
-      ],
-      "Statistics and Trends for Foreman gives users overview of their infrastructure.": [
-        ""
+      "used memory": [
+        "używana pamięć"
       ]
     }
   }

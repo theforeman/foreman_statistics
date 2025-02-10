@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-04 02:22+0100\n"
-"PO-Revision-Date: 2021-02-04 02:22+0100\n"
+"POT-Creation-Date: 2025-02-10 20:07+0100\n"
+"PO-Revision-Date: 2025-02-10 20:07+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -38,31 +38,31 @@ msgstr ""
 msgid "Delete a trend counter"
 msgstr ""
 
-#: ../app/helpers/foreman_statistics/trends_helper.rb:6
+#: ../app/helpers/foreman_statistics/trends_helper.rb:8
 msgid "Environment"
 msgstr ""
 
-#: ../app/helpers/foreman_statistics/trends_helper.rb:6
+#: ../app/helpers/foreman_statistics/trends_helper.rb:9
 msgid "Operating system"
 msgstr ""
 
-#: ../app/helpers/foreman_statistics/trends_helper.rb:7
+#: ../app/helpers/foreman_statistics/trends_helper.rb:9
 msgid "Model"
 msgstr ""
 
-#: ../app/helpers/foreman_statistics/trends_helper.rb:7
+#: ../app/helpers/foreman_statistics/trends_helper.rb:9
 msgid "Facts"
 msgstr ""
 
-#: ../app/helpers/foreman_statistics/trends_helper.rb:7
+#: ../app/helpers/foreman_statistics/trends_helper.rb:10
 msgid "Host group"
 msgstr ""
 
-#: ../app/helpers/foreman_statistics/trends_helper.rb:7
+#: ../app/helpers/foreman_statistics/trends_helper.rb:10
 msgid "Compute resource"
 msgstr ""
 
-#: ../app/helpers/foreman_statistics/trends_helper.rb:14
+#: ../app/helpers/foreman_statistics/trends_helper.rb:16
 msgid "Trend of the last %s days."
 msgstr ""
 
@@ -70,56 +70,54 @@ msgstr ""
 msgid "Trend Counter Job"
 msgstr ""
 
-#: ../app/models/concerns/foreman_statistics/general_setting_decorations.rb:12
-msgid "Max days for Trends graphs"
-msgstr ""
-
-#: ../app/models/concerns/foreman_statistics/general_setting_decorations.rb:12
-msgid "Max trends"
-msgstr ""
-
 #: ../app/services/foreman_statistics/statistics.rb:6
 msgid "Architecture Distribution"
 msgstr ""
 
 #: ../app/services/foreman_statistics/statistics.rb:7
-msgid "Environment Distribution"
-msgstr ""
-
-#: ../app/services/foreman_statistics/statistics.rb:8
 msgid "Host Group Distribution"
 msgstr ""
 
-#: ../app/services/foreman_statistics/statistics.rb:9
+#: ../app/services/foreman_statistics/statistics.rb:8
 msgid "Compute Resource Distribution"
 msgstr ""
 
-#: ../app/services/foreman_statistics/statistics.rb:10
+#: ../app/services/foreman_statistics/statistics.rb:9
+msgid "%s core"
+msgid_plural "%s cores"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/services/foreman_statistics/statistics.rb:9
 msgid "Number of CPUs"
 msgstr ""
 
-#: ../app/services/foreman_statistics/statistics.rb:11
+#: ../app/services/foreman_statistics/statistics.rb:10
 msgid "Hardware"
 msgstr ""
 
-#: ../app/services/foreman_statistics/statistics.rb:12
+#: ../app/services/foreman_statistics/statistics.rb:11
 msgid "Average Memory Usage"
 msgstr ""
 
-#: ../app/services/foreman_statistics/statistics.rb:13
+#: ../app/services/foreman_statistics/statistics.rb:12
 msgid "Average Swap Usage"
 msgstr ""
 
-#: ../app/services/foreman_statistics/statistics.rb:14
-msgid "Class Distribution"
-msgstr ""
-
-#: ../app/services/foreman_statistics/statistics.rb:15
+#: ../app/services/foreman_statistics/statistics.rb:13
 msgid "Location Distribution"
 msgstr ""
 
-#: ../app/services/foreman_statistics/statistics.rb:16
+#: ../app/services/foreman_statistics/statistics.rb:14
 msgid "Organization Distribution"
+msgstr ""
+
+#: ../app/services/foreman_statistics/statistics.rb:17
+msgid "Environment Distribution"
+msgstr ""
+
+#: ../app/services/foreman_statistics/statistics.rb:18
+msgid "Class Distribution"
 msgstr ""
 
 #:
@@ -133,7 +131,7 @@ msgid "used memory"
 msgstr ""
 
 #: ../app/views/foreman_statistics/trends/_empty_data.html.erb:1
-#: ../app/views/foreman_statistics/trends/show.html.erb:2
+#: ../app/views/foreman_statistics/trends/show.html.erb:1
 msgid "Trends for %s"
 msgstr ""
 
@@ -170,39 +168,39 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: ../app/views/foreman_statistics/trends/index.html.erb:2
+#: ../app/views/foreman_statistics/trends/index.html.erb:1
 #: ../app/views/foreman_statistics/trends/welcome.html.erb:1
 #: ../app/views/foreman_statistics/trends/welcome.html.erb:6
-#: ../lib/foreman_statistics/engine.rb:63
+#: ../lib/foreman_statistics/engine.rb:56
 msgid "Trends"
 msgstr ""
 
-#: ../app/views/foreman_statistics/trends/index.html.erb:3
+#: ../app/views/foreman_statistics/trends/index.html.erb:2
 #: ../app/views/foreman_statistics/trends/welcome.html.erb:10
 msgid "Add Trend Counter"
 msgstr ""
 
-#: ../app/views/foreman_statistics/trends/index.html.erb:9
+#: ../app/views/foreman_statistics/trends/index.html.erb:8
 msgid "Name"
 msgstr ""
 
-#: ../app/views/foreman_statistics/trends/index.html.erb:10
+#: ../app/views/foreman_statistics/trends/index.html.erb:9
 msgid "Action"
 msgstr ""
 
-#: ../app/views/foreman_statistics/trends/index.html.erb:16
+#: ../app/views/foreman_statistics/trends/index.html.erb:15
 msgid "Show Trends"
 msgstr ""
 
-#: ../app/views/foreman_statistics/trends/index.html.erb:19
+#: ../app/views/foreman_statistics/trends/index.html.erb:18
 msgid "Edit"
 msgstr ""
 
-#: ../app/views/foreman_statistics/trends/index.html.erb:20
+#: ../app/views/foreman_statistics/trends/index.html.erb:19
 msgid "Delete all the trend history for %s?"
 msgstr ""
 
-#: ../app/views/foreman_statistics/trends/index.html.erb:28
+#: ../app/views/foreman_statistics/trends/index.html.erb:27
 msgid "Last update:"
 msgstr ""
 
@@ -236,9 +234,17 @@ msgstr ""
 msgid "Learn more about this in the documentation."
 msgstr ""
 
-#: ../lib/foreman_statistics/engine.rb:69
+#: ../lib/foreman_statistics/engine.rb:62
 #: ../webpack/src/Router/StatisticsPage/StatisticsPage.js:8
 msgid "Statistics"
+msgstr ""
+
+#: ../lib/foreman_statistics/engine.rb:72
+msgid "Max days for Trends graphs"
+msgstr ""
+
+#: ../lib/foreman_statistics/engine.rb:73
+msgid "Max trends"
 msgstr ""
 
 #: ../webpack/src/Components/StatisticsChartsList/index.js:14

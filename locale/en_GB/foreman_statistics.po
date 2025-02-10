@@ -5,15 +5,15 @@
 #
 # Translators:
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2021
-# Andi Chandler <andi@gowling.com>, 2021
+# Andi Chandler <andi@gowling.com>, 2023
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_statistics 2.0.1\n"
+"Project-Id-Version: foreman_statistics 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-03 22:59+0000\n"
-"Last-Translator: Andi Chandler <andi@gowling.com>, 2021\n"
-"Language-Team: English (United Kingdom) (https://www.transifex.com/foreman/tea"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2023\n"
+"Language-Team: English (United Kingdom) (https://app.transifex.com/foreman/tea"
 "ms/114/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,80 +21,85 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "%s core"
+msgid_plural "%s cores"
+msgstr[0] ""
+msgstr[1] ""
+
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 msgid "Action with sub plans"
 msgstr "Action with sub plans"
 
 msgid "Add Trend Counter"
-msgstr ""
+msgstr "Add Trend Counter"
 
 msgid "Architecture Distribution"
-msgstr ""
+msgstr "Architecture Distribution"
 
 msgid "Average Memory Usage"
-msgstr ""
+msgstr "Average Memory Usage"
 
 msgid "Average Swap Usage"
-msgstr ""
+msgstr "Average Swap Usage"
 
 msgid "Cancel"
 msgstr "Cancel"
 
 msgid "Class Distribution"
-msgstr ""
+msgstr "Class Distribution"
 
 msgid "Compute Resource Distribution"
-msgstr ""
+msgstr "Compute Resource Distribution"
 
 msgid "Compute resource"
 msgstr "Compute resource"
 
 msgid "Create Trend"
-msgstr ""
+msgstr "Create Trend"
 
 msgid "Create a trend counter"
-msgstr ""
+msgstr "Create a trend counter"
 
 msgid "Delete a trend counter"
-msgstr ""
+msgstr "Delete a trend counter"
 
 msgid "Delete all the trend history for %s?"
-msgstr ""
+msgstr "Delete all the trend history for %s?"
 
 msgid "Display Name"
-msgstr ""
+msgstr "Display Name"
 
 msgid "Edit"
-msgstr ""
+msgstr "Edit"
 
 msgid "Edit Trend %s"
-msgstr ""
+msgstr "Edit Trend %s"
 
 msgid "Environment"
-msgstr ""
+msgstr "Environment"
 
 msgid "Environment Distribution"
-msgstr ""
+msgstr "Environment Distribution"
 
 msgid "Expand the chart"
-msgstr ""
+msgstr "Expand the chart"
 
 msgid "Fact Name"
-msgstr ""
+msgstr "Fact Name"
 
 msgid "Facts"
-msgstr ""
+msgstr "Facts"
 
 msgid "Get statistics"
-msgstr ""
+msgstr "Get statistics"
 
 msgid "Hardware"
 msgstr "Hardware"
 
 msgid "Host Group Distribution"
-msgstr ""
+msgstr "Host Group Distribution"
 
 msgid "Host group"
 msgstr "Host group"
@@ -109,22 +114,22 @@ msgid "Import facts"
 msgstr "Import facts"
 
 msgid "Last update:"
-msgstr ""
+msgstr "Last update:"
 
 msgid "Learn more about this in the documentation."
 msgstr "Learn more about this in the documentation."
 
 msgid "List of trends counters"
-msgstr ""
+msgstr "List of trends counters"
 
 msgid "Location Distribution"
-msgstr ""
+msgstr "Location Distribution"
 
 msgid "Max days for Trends graphs"
-msgstr ""
+msgstr "Max days for Trends graphs"
 
 msgid "Max trends"
-msgstr ""
+msgstr "Max trends"
 
 msgid "Model"
 msgstr "Model"
@@ -133,19 +138,19 @@ msgid "Name"
 msgstr "Name"
 
 msgid "No Charts To Load"
-msgstr ""
+msgstr "No Charts To Load"
 
 msgid "No data available"
-msgstr ""
+msgstr "No data available"
 
 msgid "No data for this trend."
-msgstr ""
+msgstr "No data for this trend."
 
 msgid "Number of CPUs"
-msgstr ""
+msgstr "Number of CPUs"
 
 msgid "Number of Hosts"
-msgstr ""
+msgstr "Number of Hosts"
 
 msgid "Operating system"
 msgstr "Operating system"
@@ -154,51 +159,51 @@ msgid "Organization Distribution"
 msgstr "Organisation Distribution"
 
 msgid "Please Select"
-msgstr ""
+msgstr "Please Select"
 
 msgid "Remote action:"
 msgstr "Remote action:"
 
 msgid "Show Host"
-msgstr ""
+msgstr "Show Host"
 
 msgid "Show Trends"
-msgstr ""
+msgstr "Show Trends"
 
 msgid "Show a trend"
-msgstr ""
+msgstr "Show a trend"
 
 msgid "Statistics"
-msgstr ""
+msgstr "Statistics"
 
 msgid "Statistics and Trends for Foreman gives users overview of their infrastructure."
-msgstr ""
+msgstr "Statistics and Trends for Foreman gives users overview of their infrastructure."
 
 msgid "Submit"
 msgstr "Submit"
 
 msgid "Trend Counter Job"
-msgstr ""
+msgstr "Trend Counter Job"
 
 msgid "Trend of the last %s days."
-msgstr ""
+msgstr "Trend of the last %s days."
 
 msgid "Trends"
-msgstr ""
+msgstr "Trends"
 
 msgid "Trends for %s"
-msgstr ""
+msgstr "Trends for %s"
 
 msgid "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts."
-msgstr ""
+msgstr "Trends in Foreman allow you to track changes in your infrastructure over time. It allows you to track both Foreman related information and to any fact. The Trend pages give a graph of how the number of hosts with that value have changed over time, and list the current hosts."
 
 msgid "free memory"
-msgstr ""
+msgstr "free memory"
 
 msgid "last %s day"
 msgid_plural "last %s days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "last %s day"
+msgstr[1] "last %s days"
 
 msgid "used memory"
-msgstr ""
+msgstr "used memory"
