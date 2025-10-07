@@ -24,9 +24,6 @@
       "Action": [
         "Actie"
       ],
-      "Action with sub plans": [
-        ""
-      ],
       "Add Trend Counter": [
         "Trend Teller Toevoegen"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         ""
       ],
-      "Import Puppet classes": [
-        ""
-      ],
-      "Import facts": [
-        ""
-      ],
       "Last update:": [
         ""
       ],
@@ -154,9 +145,6 @@
         ""
       ],
       "Please Select": [
-        ""
-      ],
-      "Remote action:": [
         ""
       ],
       "Show Host": [

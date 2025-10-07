@@ -28,9 +28,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "동작 "
 
-msgid "Action with sub plans"
-msgstr "하위 계획이 있는 작업"
-
 msgid "Add Trend Counter"
 msgstr "트렌드 카운터 추가 "
 
@@ -106,12 +103,6 @@ msgstr "호스트 그룹 "
 msgid "Hosts"
 msgstr "호스트"
 
-msgid "Import Puppet classes"
-msgstr "Puppet 클래스 가져오기"
-
-msgid "Import facts"
-msgstr "팩트 불러오기"
-
 msgid "Last update:"
 msgstr ""
 
@@ -159,9 +150,6 @@ msgstr ""
 
 msgid "Please Select"
 msgstr "선택하십시오"
-
-msgid "Remote action:"
-msgstr "원격 작업:"
 
 msgid "Show Host"
 msgstr "호스트 표시 "

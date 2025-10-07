@@ -35,9 +35,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "Команда"
 
-msgid "Action with sub plans"
-msgstr "Действия с подпланами"
-
 msgid "Add Trend Counter"
 msgstr "Добавить"
 
@@ -113,12 +110,6 @@ msgstr "Группа узлов"
 msgid "Hosts"
 msgstr "Узлы"
 
-msgid "Import Puppet classes"
-msgstr "Импорт классов Puppet"
-
-msgid "Import facts"
-msgstr "Импорт фактов"
-
 msgid "Last update:"
 msgstr ""
 
@@ -166,9 +157,6 @@ msgstr ""
 
 msgid "Please Select"
 msgstr "Выберите"
-
-msgid "Remote action:"
-msgstr "Удаленное действие:"
 
 msgid "Show Host"
 msgstr "Показать узел"

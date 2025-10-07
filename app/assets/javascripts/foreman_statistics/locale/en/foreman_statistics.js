@@ -5,7 +5,7 @@
       "": {
         "Project-Id-Version": "foreman_statistics 1.0.0",
         "Report-Msgid-Bugs-To": "",
-        "PO-Revision-Date": "2025-02-10 20:07+0100",
+        "PO-Revision-Date": "2025-10-07 14:24+0200",
         "Last-Translator": "FULL NAME <EMAIL@ADDRESS>",
         "Language-Team": "LANGUAGE <LL@li.org>",
         "Language": "",
@@ -22,9 +22,6 @@
         ""
       ],
       "Action": [
-        ""
-      ],
-      "Action with sub plans": [
         ""
       ],
       "Add Trend Counter": [
@@ -102,12 +99,6 @@
       "Hosts": [
         ""
       ],
-      "Import Puppet classes": [
-        ""
-      ],
-      "Import facts": [
-        ""
-      ],
       "Last update:": [
         ""
       ],
@@ -154,9 +145,6 @@
         ""
       ],
       "Please Select": [
-        ""
-      ],
-      "Remote action:": [
         ""
       ],
       "Show Host": [

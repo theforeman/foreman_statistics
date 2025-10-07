@@ -5,14 +5,14 @@
 #
 # Translators:
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2021
-# Andi Chandler <andi@gowling.com>, 2023
+# Andi Chandler <andi@gowling.com>, 2025
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-02-03 22:59+0000\n"
-"Last-Translator: Andi Chandler <andi@gowling.com>, 2023\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2025\n"
 "Language-Team: English (United Kingdom) (https://app.transifex.com/foreman/tea"
 "ms/114/en_GB/)\n"
 "MIME-Version: 1.0\n"
@@ -23,14 +23,11 @@ msgstr ""
 
 msgid "%s core"
 msgid_plural "%s cores"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s core"
+msgstr[1] "%s cores"
 
 msgid "Action"
 msgstr "Action"
-
-msgid "Action with sub plans"
-msgstr "Action with sub plans"
 
 msgid "Add Trend Counter"
 msgstr "Add Trend Counter"
@@ -107,12 +104,6 @@ msgstr "Host group"
 msgid "Hosts"
 msgstr "Hosts"
 
-msgid "Import Puppet classes"
-msgstr "Import Puppet classes"
-
-msgid "Import facts"
-msgstr "Import facts"
-
 msgid "Last update:"
 msgstr "Last update:"
 
@@ -160,9 +151,6 @@ msgstr "Organisation Distribution"
 
 msgid "Please Select"
 msgstr "Please Select"
-
-msgid "Remote action:"
-msgstr "Remote action:"
 
 msgid "Show Host"
 msgstr "Show Host"

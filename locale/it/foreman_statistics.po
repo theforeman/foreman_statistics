@@ -30,9 +30,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "Azione"
 
-msgid "Action with sub plans"
-msgstr ""
-
 msgid "Add Trend Counter"
 msgstr "Aggiungi contatore tendenza"
 
@@ -108,12 +105,6 @@ msgstr "Gruppo di host"
 msgid "Hosts"
 msgstr "Hosts"
 
-msgid "Import Puppet classes"
-msgstr "Importa classi Puppet"
-
-msgid "Import facts"
-msgstr "Importa gli eventi"
-
 msgid "Last update:"
 msgstr ""
 
@@ -161,9 +152,6 @@ msgstr ""
 
 msgid "Please Select"
 msgstr "Seleziona"
-
-msgid "Remote action:"
-msgstr "Azione remota:"
 
 msgid "Show Host"
 msgstr "Mostra l'host"

@@ -24,9 +24,6 @@
       "Action": [
         "Akce"
       ],
-      "Action with sub plans": [
-        "Akce s dílčími plány"
-      ],
       "Add Trend Counter": [
         "Přidat čítač trendu"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "Stroje"
       ],
-      "Import Puppet classes": [
-        "Importovat Puppet třídy"
-      ],
-      "Import facts": [
-        "Importovat fakta"
-      ],
       "Last update:": [
         "Naposledy aktualizováno:"
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "Vyberte"
-      ],
-      "Remote action:": [
-        "Akce na protějšku:"
       ],
       "Show Host": [
         "Zobrazit stroj"

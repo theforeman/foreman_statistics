@@ -31,9 +31,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "Akce"
 
-msgid "Action with sub plans"
-msgstr "Akce s dílčími plány"
-
 msgid "Add Trend Counter"
 msgstr "Přidat čítač trendu"
 
@@ -109,12 +106,6 @@ msgstr ""
 msgid "Hosts"
 msgstr "Stroje"
 
-msgid "Import Puppet classes"
-msgstr "Importovat Puppet třídy"
-
-msgid "Import facts"
-msgstr "Importovat fakta"
-
 msgid "Last update:"
 msgstr "Naposledy aktualizováno:"
 
@@ -162,9 +153,6 @@ msgstr ""
 
 msgid "Please Select"
 msgstr "Vyberte"
-
-msgid "Remote action:"
-msgstr "Akce na protějšku:"
 
 msgid "Show Host"
 msgstr "Zobrazit stroj"

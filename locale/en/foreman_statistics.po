@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foreman_statistics 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-10 20:07+0100\n"
+"PO-Revision-Date: 2025-10-07 14:24+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,9 +23,6 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "Action"
-msgstr ""
-
-msgid "Action with sub plans"
 msgstr ""
 
 msgid "Add Trend Counter"
@@ -103,12 +100,6 @@ msgstr ""
 msgid "Hosts"
 msgstr ""
 
-msgid "Import Puppet classes"
-msgstr ""
-
-msgid "Import facts"
-msgstr ""
-
 msgid "Last update:"
 msgstr ""
 
@@ -155,9 +146,6 @@ msgid "Organization Distribution"
 msgstr ""
 
 msgid "Please Select"
-msgstr ""
-
-msgid "Remote action:"
 msgstr ""
 
 msgid "Show Host"
