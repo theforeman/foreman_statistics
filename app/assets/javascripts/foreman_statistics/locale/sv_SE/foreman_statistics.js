@@ -24,9 +24,6 @@
       "Action": [
         "Åtgärd"
       ],
-      "Action with sub plans": [
-        ""
-      ],
       "Add Trend Counter": [
         "Lägg till Trendräknare"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "Värdar"
       ],
-      "Import Puppet classes": [
-        ""
-      ],
-      "Import facts": [
-        ""
-      ],
       "Last update:": [
         ""
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "Vänligen välj"
-      ],
-      "Remote action:": [
-        ""
       ],
       "Show Host": [
         "Visa Värd"

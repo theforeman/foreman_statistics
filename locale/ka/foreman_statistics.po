@@ -27,9 +27,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "მოქმედება"
 
-msgid "Action with sub plans"
-msgstr "ქმედება ქვე-გეგმებით"
-
 msgid "Add Trend Counter"
 msgstr "ტრენდის მთვლელის დამატება"
 
@@ -105,12 +102,6 @@ msgstr "ჰოსტების ჯგუფი"
 msgid "Hosts"
 msgstr "ჰოსტები"
 
-msgid "Import Puppet classes"
-msgstr "Puppet-ის კლასების შემოტანა"
-
-msgid "Import facts"
-msgstr "ფაქტების შემოტანა"
-
 msgid "Last update:"
 msgstr "უკანასკნელი განახლება:"
 
@@ -158,9 +149,6 @@ msgstr "ორგანიზაციის გადანაწილებ�
 
 msgid "Please Select"
 msgstr "გთხოვთ აირჩიოთ"
-
-msgid "Remote action:"
-msgstr "დაშორებული ქმედება:"
 
 msgid "Show Host"
 msgstr "ჰოსტის ჩვენება"
