@@ -30,9 +30,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "アクション"
 
-msgid "Action with sub plans"
-msgstr "サブプランによるアクション"
-
 msgid "Add Trend Counter"
 msgstr "トレンドカウンターの追加"
 
@@ -108,12 +105,6 @@ msgstr "ホストグループ"
 msgid "Hosts"
 msgstr "ホスト"
 
-msgid "Import Puppet classes"
-msgstr "Puppet クラスのインポート"
-
-msgid "Import facts"
-msgstr "ファクトのインポート"
-
 msgid "Last update:"
 msgstr "最終更新:"
 
@@ -161,9 +152,6 @@ msgstr "組織の分布"
 
 msgid "Please Select"
 msgstr "選択してください"
-
-msgid "Remote action:"
-msgstr "リモートアクション:"
 
 msgid "Show Host"
 msgstr "ホストの表示"

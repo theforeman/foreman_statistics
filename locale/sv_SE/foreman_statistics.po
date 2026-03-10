@@ -29,9 +29,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "Åtgärd"
 
-msgid "Action with sub plans"
-msgstr ""
-
 msgid "Add Trend Counter"
 msgstr "Lägg till Trendräknare"
 
@@ -107,12 +104,6 @@ msgstr "Värdgrupp"
 msgid "Hosts"
 msgstr "Värdar"
 
-msgid "Import Puppet classes"
-msgstr ""
-
-msgid "Import facts"
-msgstr ""
-
 msgid "Last update:"
 msgstr ""
 
@@ -160,9 +151,6 @@ msgstr ""
 
 msgid "Please Select"
 msgstr "Vänligen välj"
-
-msgid "Remote action:"
-msgstr ""
 
 msgid "Show Host"
 msgstr "Visa Värd"

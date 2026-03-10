@@ -24,9 +24,6 @@
       "Action": [
         "Acció"
       ],
-      "Action with sub plans": [
-        ""
-      ],
       "Add Trend Counter": [
         ""
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "Amfitrions"
       ],
-      "Import Puppet classes": [
-        ""
-      ],
-      "Import facts": [
-        ""
-      ],
       "Last update:": [
         ""
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "Si us plau, seleccioneu"
-      ],
-      "Remote action:": [
-        ""
       ],
       "Show Host": [
         "Mosta l'amfitrió"

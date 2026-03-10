@@ -24,9 +24,6 @@
       "Action": [
         "動作"
       ],
-      "Action with sub plans": [
-        "有子計畫的動作"
-      ],
       "Add Trend Counter": [
         "新增趨勢計數器"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "主機"
       ],
-      "Import Puppet classes": [
-        "匯入 Puppet 類別"
-      ],
-      "Import facts": [
-        "匯入詳情"
-      ],
       "Last update:": [
         ""
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "請選擇"
-      ],
-      "Remote action:": [
-        "遠端動作："
       ],
       "Show Host": [
         "顯示主機"

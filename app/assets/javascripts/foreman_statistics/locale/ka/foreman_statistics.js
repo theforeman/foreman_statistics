@@ -6,7 +6,7 @@
         "Project-Id-Version": "foreman_statistics 2.1.0",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2021-02-03 22:59+0000",
-        "Last-Translator": "Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022",
+        "Last-Translator": "Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2025",
         "Language-Team": "Georgian (https://app.transifex.com/foreman/teams/114/ka/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -18,14 +18,11 @@
         "plural_forms": "nplurals=2; plural=(n!=1);"
       },
       "%s core": [
-        "",
-        ""
+        "%s ბირთვი",
+        "%s ბირთვი"
       ],
       "Action": [
         "მოქმედება"
-      ],
-      "Action with sub plans": [
-        "ქმედება ქვე-გეგმებით"
       ],
       "Add Trend Counter": [
         "ტრენდის მთვლელის დამატება"
@@ -102,12 +99,6 @@
       "Hosts": [
         "ჰოსტები"
       ],
-      "Import Puppet classes": [
-        "Puppet-ის კლასების შემოტანა"
-      ],
-      "Import facts": [
-        "ფაქტების შემოტანა"
-      ],
       "Last update:": [
         "უკანასკნელი განახლება:"
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "გთხოვთ აირჩიოთ"
-      ],
-      "Remote action:": [
-        "დაშორებული ქმედება:"
       ],
       "Show Host": [
         "ჰოსტის ჩვენება"

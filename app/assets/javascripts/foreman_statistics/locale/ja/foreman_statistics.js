@@ -24,9 +24,6 @@
       "Action": [
         "アクション"
       ],
-      "Action with sub plans": [
-        "サブプランによるアクション"
-      ],
       "Add Trend Counter": [
         "トレンドカウンターの追加"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "ホスト"
       ],
-      "Import Puppet classes": [
-        "Puppet クラスのインポート"
-      ],
-      "Import facts": [
-        "ファクトのインポート"
-      ],
       "Last update:": [
         "最終更新:"
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "選択してください"
-      ],
-      "Remote action:": [
-        "リモートアクション:"
       ],
       "Show Host": [
         "ホストの表示"

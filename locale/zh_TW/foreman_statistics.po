@@ -30,9 +30,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "動作"
 
-msgid "Action with sub plans"
-msgstr "有子計畫的動作"
-
 msgid "Add Trend Counter"
 msgstr "新增趨勢計數器"
 
@@ -108,12 +105,6 @@ msgstr "主機群組"
 msgid "Hosts"
 msgstr "主機"
 
-msgid "Import Puppet classes"
-msgstr "匯入 Puppet 類別"
-
-msgid "Import facts"
-msgstr "匯入詳情"
-
 msgid "Last update:"
 msgstr ""
 
@@ -161,9 +152,6 @@ msgstr ""
 
 msgid "Please Select"
 msgstr "請選擇"
-
-msgid "Remote action:"
-msgstr "遠端動作："
 
 msgid "Show Host"
 msgstr "顯示主機"

@@ -24,9 +24,6 @@
       "Action": [
         "Acción"
       ],
-      "Action with sub plans": [
-        ""
-      ],
       "Add Trend Counter": [
         "Engadir Contador de Tendencia"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "Equipos"
       ],
-      "Import Puppet classes": [
-        ""
-      ],
-      "Import facts": [
-        ""
-      ],
       "Last update:": [
         ""
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "Seleccione, por favor"
-      ],
-      "Remote action:": [
-        ""
       ],
       "Show Host": [
         "Mostrar Equipo"
