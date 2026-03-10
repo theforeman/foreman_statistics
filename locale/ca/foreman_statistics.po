@@ -27,9 +27,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "Acció"
 
-msgid "Action with sub plans"
-msgstr ""
-
 msgid "Add Trend Counter"
 msgstr ""
 
@@ -105,12 +102,6 @@ msgstr "Grup d'amfitrions"
 msgid "Hosts"
 msgstr "Amfitrions"
 
-msgid "Import Puppet classes"
-msgstr ""
-
-msgid "Import facts"
-msgstr ""
-
 msgid "Last update:"
 msgstr ""
 
@@ -158,9 +149,6 @@ msgstr ""
 
 msgid "Please Select"
 msgstr "Si us plau, seleccioneu"
-
-msgid "Remote action:"
-msgstr ""
 
 msgid "Show Host"
 msgstr "Mosta l'amfitrió"

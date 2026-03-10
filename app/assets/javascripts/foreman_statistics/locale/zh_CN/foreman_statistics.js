@@ -24,9 +24,6 @@
       "Action": [
         "操作"
       ],
-      "Action with sub plans": [
-        "有子计划的操作"
-      ],
       "Add Trend Counter": [
         "添加趋势计数器"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "主机"
       ],
-      "Import Puppet classes": [
-        "导入 Puppet 类"
-      ],
-      "Import facts": [
-        "导入事实"
-      ],
       "Last update:": [
         "最后更新："
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "请选择"
-      ],
-      "Remote action:": [
-        "远程操作："
       ],
       "Show Host": [
         "显示主机"

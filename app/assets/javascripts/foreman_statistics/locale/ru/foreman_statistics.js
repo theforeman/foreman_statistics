@@ -24,9 +24,6 @@
       "Action": [
         "Команда"
       ],
-      "Action with sub plans": [
-        "Действия с подпланами"
-      ],
       "Add Trend Counter": [
         "Добавить"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "Узлы"
       ],
-      "Import Puppet classes": [
-        "Импорт классов Puppet"
-      ],
-      "Import facts": [
-        "Импорт фактов"
-      ],
       "Last update:": [
         ""
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "Выберите"
-      ],
-      "Remote action:": [
-        "Удаленное действие:"
       ],
       "Show Host": [
         "Показать узел"

@@ -30,9 +30,6 @@ msgstr[1] ""
 msgid "Action"
 msgstr "操作"
 
-msgid "Action with sub plans"
-msgstr "有子计划的操作"
-
 msgid "Add Trend Counter"
 msgstr "添加趋势计数器"
 
@@ -108,12 +105,6 @@ msgstr "主机组"
 msgid "Hosts"
 msgstr "主机"
 
-msgid "Import Puppet classes"
-msgstr "导入 Puppet 类"
-
-msgid "Import facts"
-msgstr "导入事实"
-
 msgid "Last update:"
 msgstr "最后更新："
 
@@ -161,9 +152,6 @@ msgstr "机构分布"
 
 msgid "Please Select"
 msgstr "请选择"
-
-msgid "Remote action:"
-msgstr "远程操作："
 
 msgid "Show Host"
 msgstr "显示主机"

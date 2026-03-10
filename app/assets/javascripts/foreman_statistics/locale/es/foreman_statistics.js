@@ -24,9 +24,6 @@
       "Action": [
         "Acción"
       ],
-      "Action with sub plans": [
-        "Acción con subplanes"
-      ],
       "Add Trend Counter": [
         "Añadir contador de tendencia"
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "Hosts"
       ],
-      "Import Puppet classes": [
-        "Importar clases Puppet"
-      ],
-      "Import facts": [
-        "Importar datos"
-      ],
       "Last update:": [
         "Última actualización:"
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "Seleccione"
-      ],
-      "Remote action:": [
-        "Acción remota:"
       ],
       "Show Host": [
         "Mostrar host"

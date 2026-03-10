@@ -24,9 +24,6 @@
       "Action": [
         "동작 "
       ],
-      "Action with sub plans": [
-        "하위 계획이 있는 작업"
-      ],
       "Add Trend Counter": [
         "트렌드 카운터 추가 "
       ],
@@ -102,12 +99,6 @@
       "Hosts": [
         "호스트"
       ],
-      "Import Puppet classes": [
-        "Puppet 클래스 가져오기"
-      ],
-      "Import facts": [
-        "팩트 불러오기"
-      ],
       "Last update:": [
         ""
       ],
@@ -155,9 +146,6 @@
       ],
       "Please Select": [
         "선택하십시오"
-      ],
-      "Remote action:": [
-        "원격 작업:"
       ],
       "Show Host": [
         "호스트 표시 "
